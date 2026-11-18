@@ -1,0 +1,29 @@
+# Install these with: py -3.15 -m pip install -r requirements.txt
+# SQLite does not appear here. Python already includes it as the sqlite3 module.
+
+# Web application and user interface
+streamlit==1.67.0
+
+# Data manipulation and numerical operations
+pandas==3.1.1
+numpy==2.5.5
+
+# Machine learning, classification, and scoring models
+scikit-learn==1.9.1
+lightgbm==4.7.0
+
+# Model interpretability and explainability
+shap==0.54.1
+
+# Graph modeling and account network topology
+networkx==3.7
+
+# Interactive visual analytics and charting
+plotly==7.1.0
+
+# Schema validation and data modeling
+pydantic==2.14.3
+pandera==0.36.0
+
+# Configuration parsing
+ruamel.yaml==0.19.1
