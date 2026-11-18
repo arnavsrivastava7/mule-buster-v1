@@ -940,69 +940,7 @@ def _render_transactions_explorer(service: FraudInvestigationService):
         )
 
         st.markdown("<br>", unsafe_allow_html=True)
-        # Deep inspection of a single transaction
-        st.markdown(
-            """
-            <div class="cyber-section-header">
-                <div class="cyber-section-title">🔬 INDIVIDUAL TRANSFER FORENSICS</div>
-            </div>
-            """,
-            unsafe_allow_html=True,
-        )
 
-        selected_tx = st.selectbox("Select Transaction to Inspect:", [r["transaction_id"] for r in records])
-        tx_details = service.get_transaction_forensics(selected_tx)
-
-        if tx_details:
-            tx = tx_details["transaction"]
-            s = tx_details["sender"]
-            r = tx_details["receiver"]
-
-            col_flow = st.columns([1.5, 0.5, 1.5])
-            with col_flow[0]:
-                st.markdown(
-                    f"""
-                    <div class="cyber-panel">
-                        <div style="font-size:0.72rem; color:#7D8B99; font-family:'JetBrains Mono';">ORIGINATING SENDER</div>
-                        <div style="font-size:1.1rem; font-weight:700; color:#FFFFFF; margin:4px 0;" class="mono-font">{s.get('account_id', tx['sender_id'])}</div>
-                        <div style="font-size:0.8rem; color:#A4B3C2;">
-                            Bank: <b>{s.get('bank_id', 'UNKNOWN')}</b><br>
-                            Role: <b>{s.get('account_role', 'RETAIL')}</b><br>
-                            Risk Band: <b>{s.get('risk_band', 'LOW')}</b> ({s.get('risk_score', 0):.1f})
-                        </div>
-                    </div>
-                    """,
-                    unsafe_allow_html=True,
-                )
-            with col_flow[1]:
-                st.markdown(
-                    f"""
-                    <div style="text-align:center; padding-top:1.8rem;">
-                        <span style="font-size:1.4rem; color:#00FF66;">➔</span><br>
-                        <span style="font-size:0.75rem; color:#FFFFFF; font-weight:700; font-family:'JetBrains Mono';">₹{tx['amount']:,.0f}</span>
-                    </div>
-                    """,
-                    unsafe_allow_html=True,
-                )
-            with col_flow[2]:
-                st.markdown(
-                    f"""
-                    <div class="cyber-panel">
-                        <div style="font-size:0.72rem; color:#7D8B99; font-family:'JetBrains Mono';">DESTINATION RECEIVER</div>
-                        <div style="font-size:1.1rem; font-weight:700; color:#FFFFFF; margin:4px 0;" class="mono-font">{r.get('account_id', tx['receiver_id'])}</div>
-                        <div style="font-size:0.8rem; color:#A4B3C2;">
-                            Bank: <b>{r.get('bank_id', 'UNKNOWN')}</b><br>
-                            Role: <b>{r.get('account_role', 'RETAIL')}</b><br>
-                            Risk Band: <b>{r.get('risk_band', 'LOW')}</b> ({r.get('risk_score', 0):.1f})
-                        </div>
-                    </div>
-                    """,
-                    unsafe_allow_html=True,
-                )
-
-            if tx_details["alerts"]:
-                st.write("**Associated Alerts for this Transfer or Counterparties:**")
-                st.dataframe(pd.DataFrame(tx_details["alerts"]), use_container_width=True, hide_index=True)
     else:
         st.info("No transactions match the selected filter parameters.")
 
