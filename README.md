@@ -2,176 +2,167 @@
 
 Mule Buster is a hackathon prototype for **simulated** money-mule detection at **one bank**.
 
-A money mule account is an account used to pass illegal funds onward. This project practices finding those patterns in **fake data**. It does not connect to a real bank, and it does not contain detection logic yet.
+A money mule account is an account used to pass illegal funds onward. This project practices finding those patterns in **synthetic data**. It does not connect to a real bank or read real customer data.
 
-What you have today is the folder structure, the library list, a working fake-data generator, and a placeholder web page.
+The project includes synthetic data generation, single-bank risk scoring and classification (Bank AI), cross-account graph topology and chain analysis (Central AI), instant transaction detection, SQLite persistence, and a Streamlit command center dashboard.
 
 ## Folder map
 
-| Folder | Future job |
+| Folder | Job |
 | --- | --- |
-| `data_generation/` | Build fake accounts and transactions |
-| `data/raw/` | Save generated input files |
-| `data/processed/` | Save cleaned files |
-| `bank_ai/` | Score accounts using only this bank's data |
-| `central_ai/` | Reserved for a later multi-bank comparison |
-| `detection/` | Turn scores into risk levels and alerts |
-| `dashboard/` | Show results in the browser with Streamlit |
-| `database/` | Store simulated records in SQLite |
-| `tests/` | Small checks that the pieces import |
+| `data_generation/` | Build fake accounts and transactions using a deterministic seed |
+| `data/raw/` | Save generated input CSV files |
+| `data/processed/` | Save cleaned and feature-engineered datasets |
+| `bank_ai/` | Score accounts using single-bank features, rules, and machine learning |
+| `central_ai/` | Multi-hop graph and temporal kill-chain detection |
+| `detection/` | Instant transaction risk assessment and rule engine |
+| `dashboard/` | Interactive analyst command center built with Streamlit |
+| `database/` | Persistent local SQLite database and schemas |
+| `tests/` | Automated unit, scaffold, pipeline, and label leakage tests |
 
-`app.py` is the file you run. It opens the placeholder page in `dashboard/home.py`.
+`app.py` is the main entry point that launches the Streamlit application.
 
 ## Libraries
 
 | Library | Why it is here |
 | --- | --- |
-| Streamlit | Local web page |
-| Pandas | Tables of simulated accounts and transactions |
-| NumPy | Numbers used by the future model |
-| Scikit-learn | Future Bank AI model |
-| NetworkX | Future graph of how accounts pay each other |
-| Plotly | Future charts on the dashboard |
-| SQLite | File database that ships inside Python as `sqlite3` |
+| Streamlit | Local web application and interactive user interface |
+| Pandas | Ingestion, filtering, and table transformations for simulated accounts and transactions |
+| NumPy | Numerical arrays and mathematical operations for features and scoring |
+| Scikit-learn | Supervised classification model training and evaluation |
+| LightGBM | Gradient boosting models with monotonic constraints for account risk scoring |
+| SHAP | Model explainability and feature contribution reason codes |
+| NetworkX | Graph data structures for account-to-account payment network topologies (installed & used) |
+| Plotly | Interactive charts, distribution plots, and network visualizations (installed & used) |
+| Pydantic & Pandera | Strict schema validation for data models, entities, and transactions |
+| Ruamel.yaml | Configuration file loading for tunable detection rules and thresholds |
+| SQLite | File database that ships with standard Python as `sqlite3` (no separate install required) |
 
-SQLite is not listed in `requirements.txt` because you do not install it separately.
+## Prerequisites
+
+- **Python**: Python 3.10 or higher (tested on Python 3.11, 3.12, and 3.15). Any recent Python 3.10+ release with standard packaging tools should work.
+- **Git**: Required for version control and cloning this repository.
 
 ## Set up the virtual environment
 
-A virtual environment is a private folder of libraries for this project. Installing here does not change other Python projects on your computer.
+A virtual environment is a private folder of libraries for this project. Installing here does not change other Python installations on your machine.
 
-The steps below were written for **Windows PowerShell**. Run them from the folder where you cloned this project.
+Open your terminal, navigate to the folder where you cloned this repository, and follow the steps below:
 
-`python` by itself may open the Microsoft Store instead of real Python. Use `py -3.15`, which selects Python 3.15 already installed on this PC.
+### 1. Create the virtual environment
 
-### 1. Open the project folder in the terminal
+- **Windows (PowerShell or Command Prompt)**:
+  ```powershell
+  python -m venv .venv
+  ```
+  *(If `python` opens the Microsoft Store on Windows, try `py -m venv .venv`)*
 
-`cd` means change directory. It moves the terminal into the project folder. Commands you type afterward apply to this project.
+- **macOS / Linux**:
+  ```bash
+  python3 -m venv .venv
+  ```
 
-```powershell
-cd "the folder where you cloned this project"
-```
+You only need to create `.venv` once per machine.
 
-### 2. Create the virtual environment
+### 2. Activate the virtual environment
 
-`py -3.15` starts Python 3.15. `-m venv` runs Python's built-in environment builder. `.venv` is the new folder that will hold this project's private Python.
+- **Windows (PowerShell)**:
+  ```powershell
+  .\.venv\Scripts\Activate.ps1
+  ```
+  *Note on PowerShell Execution Policy:* If PowerShell displays a script execution error, set the execution policy to `RemoteSigned` for your current process:
+  ```powershell
+  Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
+  .\.venv\Scripts\Activate.ps1
+  ```
+  `RemoteSigned` permits locally authored scripts (like virtual environment activation) to run while blocking unsigned remote scripts. `-Scope Process` ensures this change only affects the current terminal window.
 
-```powershell
-py -3.15 -m venv .venv
-```
+- **Windows (Command Prompt)**:
+  ```cmd
+  .\.venv\Scripts\activate.bat
+  ```
 
-You only create `.venv` once per computer. If that folder already exists, skip this command.
+- **macOS / Linux**:
+  ```bash
+  source .venv/bin/activate
+  ```
 
-### 3. Turn the virtual environment on
+When activated, your terminal prompt will be prefixed with `(.venv)`.
 
-This command applies to the current terminal window. When it works, the prompt starts with `(.venv)`.
+### 3. Install the dependencies
 
-```powershell
-.\.venv\Scripts\Activate.ps1
-```
+With the virtual environment activated:
 
-The `.\` means "in this folder". `Activate.ps1` is the PowerShell switch that makes `python` and `streamlit` point at `.venv`.
-
-If PowerShell says running scripts is disabled, allow scripts for **this window only**, then try the activate command again:
-
-```powershell
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-.\.venv\Scripts\Activate.ps1
-```
-
-`Set-ExecutionPolicy` changes a Windows safety setting. `-Scope Process` limits that change to the current terminal window. Closing the window clears it.
-
-### 4. Install the libraries
-
-`pip` is Python's library installer. `-m pip` runs it through Python. `-r requirements.txt` reads the package names from that file and installs them into the active environment.
-
-With `(.venv)` visible on the prompt:
-
-```powershell
+```bash
 python -m pip install -r requirements.txt
 ```
 
-If you have not activated `.venv`, this still installs into the project environment:
+## Run the dashboard
 
-```powershell
-.\.venv\Scripts\python.exe -m pip install -r requirements.txt
-```
+Start the local Streamlit application:
 
-## Run the placeholder page
-
-`streamlit` starts a local website. `run app.py` tells it which file to open. Leave this terminal running while you use the page.
-
-With `(.venv)` visible:
-
-```powershell
+```bash
 streamlit run app.py
 ```
 
-Without activation:
+Streamlit will print a local URL (typically `http://localhost:8501`). Open it in your web browser.
 
-```powershell
-.\.venv\Scripts\python.exe -m streamlit run app.py
-```
+**To stop the page:** Click in the terminal running Streamlit and press `Ctrl+C`.
 
-Streamlit prints a local address, usually `http://localhost:8501`. Open that address if the browser does not open by itself.
+## Generate synthetic bank data
 
-The first time, Streamlit may ask for an email. You can press Enter to skip it.
+The data generator produces realistic synthetic transaction histories for testing:
 
-To stop the page, click the terminal and press `Ctrl+C`.
+- **`data/raw/accounts.csv`** — 100 simulated accounts
+- **`data/raw/transactions.csv`** — 320 simulated payment records
+- **`data/raw/summary_report.txt`** — High-level summary of accounts, transactions, and archetype counts
 
-## Generate the fake bank data
+> **Important:** Re-running the generator overwrites the files in `data/raw/`. Any manual edits made to those CSV files will be replaced.
 
-This writes three files for the single-bank prototype:
+Run the generator from the project root with your virtual environment active:
 
-- `data/raw/accounts.csv` — 100 fake accounts
-- `data/raw/transactions.csv` — 320 fake payments
-- `data/raw/summary_report.txt` — counts of accounts, payments, and ground-truth labels
-
-Ground-truth labels are the answers baked into the fake story. They are separate from anything a model might guess later. The file has no prediction column.
-
-The generator uses a fixed random seed, `42`, so running it again produces the same `BANK_01` files. The same stories can later be replayed for `BANK_02` and `BANK_03` with different account IDs and dates. Only `BANK_01` is written by the command below.
-
-With `(.venv)` visible, from the project folder:
-
-```powershell
+```bash
 python -m data_generation.data_generator
 ```
 
-`python -m` runs a Python file as a module. `data_generation.data_generator` is the generator. It prints the summary, then the paths of the three files.
+### Data Schema Reference
 
-Without activation:
+Both CSV files include the ground-truth answers baked into the synthetic scenarios. These are labels for evaluation, not model predictions.
 
-```powershell
-.\.venv\Scripts\python.exe -m data_generation.data_generator
-```
+#### `data/raw/accounts.csv`
+| Column | Type | Description |
+| --- | --- | --- |
+| `account_id` | String | Unique account identifier (e.g., `ACC_001`) |
+| `bank_id` | String | Simulated financial institution identifier (`BANK_01`) |
+| `account_role` | String | Account archetype (`CUSTOMER`, `MERCHANT`, `SMURF_HUB`, `MULE_CHAIN`, `DORMANT_MULE`) |
+| `ground_truth_label` | String | Ground-truth simulation label (e.g., `0_LEGITIMATE_NORMAL`, `1_MULE_SMURF_HUB`) |
+| `is_legitimate_decoy` | Boolean | True if high-activity but benign account intended to challenge false-positive rates |
+| `city_code` | String | Account opening location code (e.g., `PUN`, `MUM`, `DEL`) |
+| `opened_on` | Date (YYYY-MM-DD) | Date the simulated account was created |
+| `opening_balance_inr` | Float | Initial ledger balance in INR |
 
-## Run the checks
+#### `data/raw/transactions.csv`
+| Column | Type | Description |
+| --- | --- | --- |
+| `transaction_id` | String | Unique transaction reference (e.g., `TXN_0001`) |
+| `sender_id` | String | Originating account ID (references `account_id`) |
+| `receiver_id` | String | Destination account ID (references `account_id`) |
+| `amount` | Float | Transaction transfer amount in INR |
+| `timestamp` | ISO 8601 String | Transaction timestamp with timezone offset |
+| `transaction_type` | String | Payment channel (e.g., `SALARY_NEFT`, `IMPS_TRANSFER`, `UPI_TRANSFER`) |
+| `ground_truth_label` | String | Scenario label indicating whether transfer is legitimate or part of a mule flow |
 
-`unittest` is Python's built-in test runner. `discover -s tests` looks in the `tests` folder for files named `test_*.py` and runs them. The data tests check the fake ledger. The scaffold tests check that the unfinished modules still import.
+## Run the automated tests
 
-With `(.venv)` visible, from the project folder:
+Run Python's built-in test runner across the entire test suite:
 
-```powershell
+```bash
 python -m unittest discover -s tests
 ```
 
-## Git
-
-Git is not installed on this PC, so this folder is not a Git repository yet. The project still runs without Git.
-
-When you want saved history, install Git for Windows from [https://git-scm.com/download/win](https://git-scm.com/download/win). Then, in this folder, run:
-
-```powershell
-git init
-```
-
-`git init` creates a hidden `.git` folder that can record future versions. It does not upload anything.
-
-## What is intentionally missing
-
-- A trained model
-- Risk rules and alerts
-- Charts and account graphs
-- A created SQLite database
-
-Read `PROJECT_CONTEXT.md` for what each module is meant to become.
+The test suite covers:
+- Synthetic ledger consistency, deterministic seeds, and multi-bank profile isolation (`test_data_generator.py`)
+- Module scaffold imports and interfaces (`test_scaffold.py`)
+- Central AI graph construction, time-respecting paths, and causal monotonicity (`test_central_ai.py`)
+- End-to-end instant detection, database persistence, and investigation workflows (`test_functional_pipeline.py`)
+- Label leakage prevention to guarantee ground-truth labels never enter ML feature matrices (`test_label_leakage.py`)
