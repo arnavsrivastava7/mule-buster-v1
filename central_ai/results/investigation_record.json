@@ -1,0 +1,3444 @@
+{
+  "investigation_id": "INV-BATCH_2026_11_16_182721",
+  "bank_id": "BANK_SIM_01",
+  "generated_at": "2026-11-16T18:27:21.194846+00:00",
+  "graph_summary": {
+    "total_nodes": 100,
+    "total_observed_edges": 312,
+    "alerted_accounts_count": 18,
+    "candidate_chains_discovered": 14,
+    "highest_chain_risk_score": 82.16
+  },
+  "epistemic_disclaimer": "DISTINCTION OF EVIDENCE: 'observed_transfers' represent verified single-hop ledger transactions between specific account pairs within the bank. 'candidate_chains' represent inferred, time-respecting multi-hop flow hypotheses. Approximate amount conservation across sequential hops does NOT prove that identical underlying funds moved through the chain due to account balance fungibility.",
+  "observed_transfers": [
+    {
+      "tx_id": "TXN_0001",
+      "from_account": "ACC_069",
+      "to_account": "ACC_001",
+      "amount": 85000.0,
+      "timestamp": "2026-11-01T03:30:12+00:00",
+      "channel": "NEFT",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0002",
+      "from_account": "ACC_069",
+      "to_account": "ACC_002",
+      "amount": 82000.0,
+      "timestamp": "2026-11-01T03:30:15+00:00",
+      "channel": "NEFT",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0003",
+      "from_account": "ACC_069",
+      "to_account": "ACC_003",
+      "amount": 91000.0,
+      "timestamp": "2026-11-01T03:30:19+00:00",
+      "channel": "NEFT",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0004",
+      "from_account": "ACC_069",
+      "to_account": "ACC_004",
+      "amount": 76500.0,
+      "timestamp": "2026-11-01T03:30:22+00:00",
+      "channel": "NEFT",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0005",
+      "from_account": "ACC_069",
+      "to_account": "ACC_005",
+      "amount": 88000.0,
+      "timestamp": "2026-11-01T03:30:28+00:00",
+      "channel": "NEFT",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0006",
+      "from_account": "ACC_069",
+      "to_account": "ACC_006",
+      "amount": 94000.0,
+      "timestamp": "2026-11-01T03:30:31+00:00",
+      "channel": "NEFT",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0007",
+      "from_account": "ACC_069",
+      "to_account": "ACC_007",
+      "amount": 79000.0,
+      "timestamp": "2026-11-01T03:30:35+00:00",
+      "channel": "NEFT",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0008",
+      "from_account": "ACC_069",
+      "to_account": "ACC_008",
+      "amount": 83500.0,
+      "timestamp": "2026-11-01T03:30:40+00:00",
+      "channel": "NEFT",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0009",
+      "from_account": "ACC_069",
+      "to_account": "ACC_009",
+      "amount": 105000.0,
+      "timestamp": "2026-11-01T03:30:44+00:00",
+      "channel": "NEFT",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0010",
+      "from_account": "ACC_069",
+      "to_account": "ACC_010",
+      "amount": 68000.0,
+      "timestamp": "2026-11-01T03:30:49+00:00",
+      "channel": "NEFT",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0011",
+      "from_account": "ACC_069",
+      "to_account": "ACC_011",
+      "amount": 72000.0,
+      "timestamp": "2026-11-01T03:30:53+00:00",
+      "channel": "NEFT",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0012",
+      "from_account": "ACC_069",
+      "to_account": "ACC_012",
+      "amount": 89000.0,
+      "timestamp": "2026-11-01T03:30:58+00:00",
+      "channel": "NEFT",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0013",
+      "from_account": "ACC_069",
+      "to_account": "ACC_013",
+      "amount": 95000.0,
+      "timestamp": "2026-11-01T03:31:02+00:00",
+      "channel": "NEFT",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0014",
+      "from_account": "ACC_069",
+      "to_account": "ACC_014",
+      "amount": 81000.0,
+      "timestamp": "2026-11-01T03:31:07+00:00",
+      "channel": "NEFT",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0015",
+      "from_account": "ACC_069",
+      "to_account": "ACC_015",
+      "amount": 77500.0,
+      "timestamp": "2026-11-01T03:31:11+00:00",
+      "channel": "NEFT",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0016",
+      "from_account": "ACC_069",
+      "to_account": "ACC_016",
+      "amount": 84000.0,
+      "timestamp": "2026-11-01T03:31:16+00:00",
+      "channel": "NEFT",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0017",
+      "from_account": "ACC_069",
+      "to_account": "ACC_017",
+      "amount": 92500.0,
+      "timestamp": "2026-11-01T03:31:20+00:00",
+      "channel": "NEFT",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0018",
+      "from_account": "ACC_069",
+      "to_account": "ACC_018",
+      "amount": 74000.0,
+      "timestamp": "2026-11-01T03:31:25+00:00",
+      "channel": "NEFT",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0019",
+      "from_account": "ACC_069",
+      "to_account": "ACC_019",
+      "amount": 86500.0,
+      "timestamp": "2026-11-01T03:31:30+00:00",
+      "channel": "NEFT",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0020",
+      "from_account": "ACC_069",
+      "to_account": "ACC_020",
+      "amount": 99000.0,
+      "timestamp": "2026-11-01T03:31:35+00:00",
+      "channel": "NEFT",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0021",
+      "from_account": "ACC_070",
+      "to_account": "ACC_021",
+      "amount": 110000.0,
+      "timestamp": "2026-11-01T03:45:05+00:00",
+      "channel": "NEFT",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0022",
+      "from_account": "ACC_070",
+      "to_account": "ACC_022",
+      "amount": 98000.0,
+      "timestamp": "2026-11-01T03:45:10+00:00",
+      "channel": "NEFT",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0023",
+      "from_account": "ACC_070",
+      "to_account": "ACC_023",
+      "amount": 104000.0,
+      "timestamp": "2026-11-01T03:45:14+00:00",
+      "channel": "NEFT",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0024",
+      "from_account": "ACC_070",
+      "to_account": "ACC_024",
+      "amount": 87000.0,
+      "timestamp": "2026-11-01T03:45:19+00:00",
+      "channel": "NEFT",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0025",
+      "from_account": "ACC_070",
+      "to_account": "ACC_025",
+      "amount": 93000.0,
+      "timestamp": "2026-11-01T03:45:23+00:00",
+      "channel": "NEFT",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0026",
+      "from_account": "ACC_070",
+      "to_account": "ACC_026",
+      "amount": 115000.0,
+      "timestamp": "2026-11-01T03:45:28+00:00",
+      "channel": "NEFT",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0027",
+      "from_account": "ACC_070",
+      "to_account": "ACC_027",
+      "amount": 89500.0,
+      "timestamp": "2026-11-01T03:45:32+00:00",
+      "channel": "NEFT",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0028",
+      "from_account": "ACC_070",
+      "to_account": "ACC_028",
+      "amount": 96000.0,
+      "timestamp": "2026-11-01T03:45:37+00:00",
+      "channel": "NEFT",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0029",
+      "from_account": "ACC_070",
+      "to_account": "ACC_029",
+      "amount": 102000.0,
+      "timestamp": "2026-11-01T03:45:41+00:00",
+      "channel": "NEFT",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0030",
+      "from_account": "ACC_070",
+      "to_account": "ACC_030",
+      "amount": 108000.0,
+      "timestamp": "2026-11-01T03:45:46+00:00",
+      "channel": "NEFT",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0031",
+      "from_account": "ACC_001",
+      "to_account": "ACC_071",
+      "amount": 24000.0,
+      "timestamp": "2026-11-01T04:35:11+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0032",
+      "from_account": "ACC_002",
+      "to_account": "ACC_071",
+      "amount": 22000.0,
+      "timestamp": "2026-11-01T04:42:44+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0033",
+      "from_account": "ACC_003",
+      "to_account": "ACC_071",
+      "amount": 28000.0,
+      "timestamp": "2026-11-01T04:48:09+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0034",
+      "from_account": "ACC_004",
+      "to_account": "ACC_071",
+      "amount": 21500.0,
+      "timestamp": "2026-11-01T04:55:50+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0035",
+      "from_account": "ACC_005",
+      "to_account": "ACC_071",
+      "amount": 25000.0,
+      "timestamp": "2026-11-01T05:03:17+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0036",
+      "from_account": "ACC_006",
+      "to_account": "ACC_071",
+      "amount": 30000.0,
+      "timestamp": "2026-11-01T05:11:02+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0037",
+      "from_account": "ACC_007",
+      "to_account": "ACC_073",
+      "amount": 2450.0,
+      "timestamp": "2026-11-01T05:32:19+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0038",
+      "from_account": "ACC_008",
+      "to_account": "ACC_073",
+      "amount": 3120.0,
+      "timestamp": "2026-11-01T05:38:45+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0039",
+      "from_account": "ACC_009",
+      "to_account": "ACC_073",
+      "amount": 4180.0,
+      "timestamp": "2026-11-01T05:44:33+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0040",
+      "from_account": "ACC_010",
+      "to_account": "ACC_073",
+      "amount": 1890.0,
+      "timestamp": "2026-11-01T05:50:10+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0041",
+      "from_account": "ACC_011",
+      "to_account": "ACC_073",
+      "amount": 2760.0,
+      "timestamp": "2026-11-01T05:56:55+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0042",
+      "from_account": "ACC_012",
+      "to_account": "ACC_073",
+      "amount": 3340.0,
+      "timestamp": "2026-11-01T06:01:08+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0043",
+      "from_account": "ACC_013",
+      "to_account": "ACC_061",
+      "amount": 3420.5,
+      "timestamp": "2026-11-01T06:40:14+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0044",
+      "from_account": "ACC_014",
+      "to_account": "ACC_061",
+      "amount": 1850.0,
+      "timestamp": "2026-11-01T06:48:29+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0045",
+      "from_account": "ACC_015",
+      "to_account": "ACC_061",
+      "amount": 4910.75,
+      "timestamp": "2026-11-01T06:54:05+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0046",
+      "from_account": "ACC_016",
+      "to_account": "ACC_062",
+      "amount": 2100.0,
+      "timestamp": "2026-11-01T07:10:12+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0047",
+      "from_account": "ACC_017",
+      "to_account": "ACC_062",
+      "amount": 650.0,
+      "timestamp": "2026-11-01T07:15:38+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0048",
+      "from_account": "ACC_018",
+      "to_account": "ACC_063",
+      "amount": 1420.0,
+      "timestamp": "2026-11-01T07:35:22+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0049",
+      "from_account": "ACC_019",
+      "to_account": "ACC_064",
+      "amount": 890.0,
+      "timestamp": "2026-11-01T07:50:49+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0050",
+      "from_account": "ACC_020",
+      "to_account": "ACC_064",
+      "amount": 1240.0,
+      "timestamp": "2026-11-01T08:05:11+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0051",
+      "from_account": "ACC_021",
+      "to_account": "ACC_066",
+      "amount": 2499.0,
+      "timestamp": "2026-11-01T08:40:05+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0052",
+      "from_account": "ACC_022",
+      "to_account": "ACC_066",
+      "amount": 1599.0,
+      "timestamp": "2026-11-01T08:45:30+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0053",
+      "from_account": "ACC_023",
+      "to_account": "ACC_066",
+      "amount": 4299.0,
+      "timestamp": "2026-11-01T08:52:18+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0054",
+      "from_account": "ACC_024",
+      "to_account": "ACC_066",
+      "amount": 899.0,
+      "timestamp": "2026-11-01T08:59:44+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0055",
+      "from_account": "ACC_025",
+      "to_account": "ACC_066",
+      "amount": 3199.0,
+      "timestamp": "2026-11-01T09:08:02+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0056",
+      "from_account": "ACC_026",
+      "to_account": "ACC_066",
+      "amount": 7599.0,
+      "timestamp": "2026-11-01T09:19:19+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0057",
+      "from_account": "ACC_066",
+      "to_account": "ACC_061",
+      "amount": 8500.0,
+      "timestamp": "2026-11-01T17:30:05+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0058",
+      "from_account": "ACC_066",
+      "to_account": "ACC_064",
+      "amount": 6295.0,
+      "timestamp": "2026-11-01T17:30:12+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0059",
+      "from_account": "ACC_066",
+      "to_account": "ACC_065",
+      "amount": 5299.0,
+      "timestamp": "2026-11-01T17:30:18+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0060",
+      "from_account": "ACC_027",
+      "to_account": "ACC_028",
+      "amount": 1500.0,
+      "timestamp": "2026-11-02T04:41:20+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0061",
+      "from_account": "ACC_029",
+      "to_account": "ACC_030",
+      "amount": 2200.0,
+      "timestamp": "2026-11-02T05:15:10+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0062",
+      "from_account": "ACC_031",
+      "to_account": "ACC_067",
+      "amount": 45000.0,
+      "timestamp": "2026-11-02T05:30:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0063",
+      "from_account": "ACC_067",
+      "to_account": "ACC_032",
+      "amount": 14500.0,
+      "timestamp": "2026-11-02T06:00:05+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0064",
+      "from_account": "ACC_067",
+      "to_account": "ACC_033",
+      "amount": 18200.0,
+      "timestamp": "2026-11-02T06:00:12+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0065",
+      "from_account": "ACC_067",
+      "to_account": "ACC_034",
+      "amount": 12300.0,
+      "timestamp": "2026-11-02T06:00:19+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0066",
+      "from_account": "ACC_067",
+      "to_account": "ACC_035",
+      "amount": 21000.0,
+      "timestamp": "2026-11-02T06:00:25+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0067",
+      "from_account": "ACC_067",
+      "to_account": "ACC_036",
+      "amount": 16400.0,
+      "timestamp": "2026-11-02T06:00:31+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0068",
+      "from_account": "ACC_067",
+      "to_account": "ACC_037",
+      "amount": 19800.0,
+      "timestamp": "2026-11-02T06:00:38+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0069",
+      "from_account": "ACC_038",
+      "to_account": "ACC_061",
+      "amount": 2640.0,
+      "timestamp": "2026-11-02T07:42:40+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0070",
+      "from_account": "ACC_039",
+      "to_account": "ACC_062",
+      "amount": 1800.0,
+      "timestamp": "2026-11-02T08:10:15+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0071",
+      "from_account": "ACC_040",
+      "to_account": "ACC_063",
+      "amount": 950.0,
+      "timestamp": "2026-11-02T08:35:50+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0072",
+      "from_account": "ACC_041",
+      "to_account": "ACC_076",
+      "amount": 120000.0,
+      "timestamp": "2026-11-03T08:30:10+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0073",
+      "from_account": "ACC_076",
+      "to_account": "ACC_077",
+      "amount": 117000.0,
+      "timestamp": "2026-11-03T08:39:42+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0074",
+      "from_account": "ACC_077",
+      "to_account": "ACC_078",
+      "amount": 114000.0,
+      "timestamp": "2026-11-03T08:48:15+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0075",
+      "from_account": "ACC_078",
+      "to_account": "ACC_079",
+      "amount": 111000.0,
+      "timestamp": "2026-11-03T08:59:03+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0076",
+      "from_account": "ACC_079",
+      "to_account": "ACC_080",
+      "amount": 108000.0,
+      "timestamp": "2026-11-03T09:07:55+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0078",
+      "from_account": "ACC_042",
+      "to_account": "ACC_065",
+      "amount": 42000.0,
+      "timestamp": "2026-11-03T09:40:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0079",
+      "from_account": "ACC_043",
+      "to_account": "ACC_061",
+      "amount": 3110.0,
+      "timestamp": "2026-11-03T10:15:22+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0080",
+      "from_account": "ACC_044",
+      "to_account": "ACC_073",
+      "amount": 2150.0,
+      "timestamp": "2026-11-03T10:42:05+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0081",
+      "from_account": "ACC_045",
+      "to_account": "ACC_073",
+      "amount": 1980.0,
+      "timestamp": "2026-11-03T11:00:40+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0082",
+      "from_account": "ACC_046",
+      "to_account": "ACC_073",
+      "amount": 2890.0,
+      "timestamp": "2026-11-03T11:25:18+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0083",
+      "from_account": "ACC_061",
+      "to_account": "ACC_074",
+      "amount": 45000.0,
+      "timestamp": "2026-11-03T12:00:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0084",
+      "from_account": "ACC_064",
+      "to_account": "ACC_074",
+      "amount": 18500.0,
+      "timestamp": "2026-11-03T12:15:12+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0085",
+      "from_account": "ACC_047",
+      "to_account": "ACC_081",
+      "amount": 95000.0,
+      "timestamp": "2026-11-04T05:40:05+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0086",
+      "from_account": "ACC_081",
+      "to_account": "ACC_082",
+      "amount": 92500.0,
+      "timestamp": "2026-11-04T05:51:30+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0087",
+      "from_account": "ACC_082",
+      "to_account": "ACC_083",
+      "amount": 90000.0,
+      "timestamp": "2026-11-04T06:04:12+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0088",
+      "from_account": "ACC_083",
+      "to_account": "ACC_084",
+      "amount": 87500.0,
+      "timestamp": "2026-11-04T06:16:49+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0089",
+      "from_account": "ACC_084",
+      "to_account": "ACC_085",
+      "amount": 85000.0,
+      "timestamp": "2026-11-04T06:28:02+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0091",
+      "from_account": "ACC_001",
+      "to_account": "ACC_068",
+      "amount": 1200.0,
+      "timestamp": "2026-11-04T07:40:10+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0092",
+      "from_account": "ACC_002",
+      "to_account": "ACC_068",
+      "amount": 1200.0,
+      "timestamp": "2026-11-04T07:41:05+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0093",
+      "from_account": "ACC_003",
+      "to_account": "ACC_068",
+      "amount": 1200.0,
+      "timestamp": "2026-11-04T07:42:40+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0094",
+      "from_account": "ACC_004",
+      "to_account": "ACC_068",
+      "amount": 1200.0,
+      "timestamp": "2026-11-04T07:44:15+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0095",
+      "from_account": "ACC_068",
+      "to_account": "ACC_064",
+      "amount": 4800.0,
+      "timestamp": "2026-11-04T07:55:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0096",
+      "from_account": "ACC_048",
+      "to_account": "ACC_049",
+      "amount": 3500.0,
+      "timestamp": "2026-11-04T09:50:11+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0097",
+      "from_account": "ACC_050",
+      "to_account": "ACC_051",
+      "amount": 1800.0,
+      "timestamp": "2026-11-04T10:35:33+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0098",
+      "from_account": "ACC_052",
+      "to_account": "ACC_061",
+      "amount": 2750.0,
+      "timestamp": "2026-11-04T11:42:49+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0099",
+      "from_account": "ACC_053",
+      "to_account": "ACC_062",
+      "amount": 1500.0,
+      "timestamp": "2026-11-04T12:10:02+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0100",
+      "from_account": "ACC_054",
+      "to_account": "ACC_063",
+      "amount": 620.0,
+      "timestamp": "2026-11-04T12:45:27+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0101",
+      "from_account": "ACC_086",
+      "to_account": "ACC_087",
+      "amount": 1.0,
+      "timestamp": "2026-11-05T02:30:05+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0102",
+      "from_account": "ACC_088",
+      "to_account": "ACC_089",
+      "amount": 1.0,
+      "timestamp": "2026-11-05T02:32:10+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0103",
+      "from_account": "ACC_090",
+      "to_account": "ACC_091",
+      "amount": 1.0,
+      "timestamp": "2026-11-05T02:34:19+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0104",
+      "from_account": "ACC_091",
+      "to_account": "ACC_092",
+      "amount": 1.0,
+      "timestamp": "2026-11-05T02:36:44+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0105",
+      "from_account": "ACC_005",
+      "to_account": "ACC_072",
+      "amount": 1000.0,
+      "timestamp": "2026-11-05T04:30:12+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0106",
+      "from_account": "ACC_006",
+      "to_account": "ACC_072",
+      "amount": 2500.0,
+      "timestamp": "2026-11-05T04:35:30+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0107",
+      "from_account": "ACC_007",
+      "to_account": "ACC_072",
+      "amount": 500.0,
+      "timestamp": "2026-11-05T04:42:45+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0108",
+      "from_account": "ACC_008",
+      "to_account": "ACC_072",
+      "amount": 5000.0,
+      "timestamp": "2026-11-05T04:48:19+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0109",
+      "from_account": "ACC_009",
+      "to_account": "ACC_072",
+      "amount": 1500.0,
+      "timestamp": "2026-11-05T04:54:02+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0110",
+      "from_account": "ACC_010",
+      "to_account": "ACC_072",
+      "amount": 500.0,
+      "timestamp": "2026-11-05T05:01:55+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0111",
+      "from_account": "ACC_011",
+      "to_account": "ACC_072",
+      "amount": 2000.0,
+      "timestamp": "2026-11-05T05:10:10+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0112",
+      "from_account": "ACC_012",
+      "to_account": "ACC_072",
+      "amount": 1000.0,
+      "timestamp": "2026-11-05T05:18:33+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0113",
+      "from_account": "ACC_072",
+      "to_account": "ACC_063",
+      "amount": 10000.0,
+      "timestamp": "2026-11-05T11:30:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0114",
+      "from_account": "ACC_071",
+      "to_account": "ACC_073",
+      "amount": 42000.0,
+      "timestamp": "2026-11-05T12:00:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0115",
+      "from_account": "ACC_055",
+      "to_account": "ACC_065",
+      "amount": 64000.0,
+      "timestamp": "2026-11-06T05:50:15+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0116",
+      "from_account": "ACC_056",
+      "to_account": "ACC_061",
+      "amount": 4120.0,
+      "timestamp": "2026-11-06T06:40:05+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0117",
+      "from_account": "ACC_057",
+      "to_account": "ACC_062",
+      "amount": 2300.0,
+      "timestamp": "2026-11-06T07:15:30+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0118",
+      "from_account": "ACC_058",
+      "to_account": "ACC_064",
+      "amount": 740.0,
+      "timestamp": "2026-11-06T07:45:18+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0119",
+      "from_account": "ACC_059",
+      "to_account": "ACC_063",
+      "amount": 1180.0,
+      "timestamp": "2026-11-06T08:35:40+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0120",
+      "from_account": "ACC_060",
+      "to_account": "ACC_061",
+      "amount": 2950.0,
+      "timestamp": "2026-11-06T09:50:11+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0121",
+      "from_account": "ACC_013",
+      "to_account": "ACC_093",
+      "amount": 49500.0,
+      "timestamp": "2026-11-06T10:31:10+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0122",
+      "from_account": "ACC_014",
+      "to_account": "ACC_093",
+      "amount": 49200.0,
+      "timestamp": "2026-11-06T10:34:22+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0123",
+      "from_account": "ACC_015",
+      "to_account": "ACC_093",
+      "amount": 48900.0,
+      "timestamp": "2026-11-06T10:38:45+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0124",
+      "from_account": "ACC_016",
+      "to_account": "ACC_093",
+      "amount": 49800.0,
+      "timestamp": "2026-11-06T10:42:19+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0125",
+      "from_account": "ACC_093",
+      "to_account": "ACC_097",
+      "amount": 194000.0,
+      "timestamp": "2026-11-06T10:58:05+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0126",
+      "from_account": "ACC_097",
+      "to_account": "ACC_076",
+      "amount": 48500.0,
+      "timestamp": "2026-11-06T11:10:12+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0127",
+      "from_account": "ACC_097",
+      "to_account": "ACC_077",
+      "amount": 48000.0,
+      "timestamp": "2026-11-06T11:13:30+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0128",
+      "from_account": "ACC_097",
+      "to_account": "ACC_078",
+      "amount": 48500.0,
+      "timestamp": "2026-11-06T11:17:15+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0129",
+      "from_account": "ACC_097",
+      "to_account": "ACC_079",
+      "amount": 47000.0,
+      "timestamp": "2026-11-06T11:21:02+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0130",
+      "from_account": "ACC_021",
+      "to_account": "ACC_022",
+      "amount": 4500.0,
+      "timestamp": "2026-11-07T04:45:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0131",
+      "from_account": "ACC_023",
+      "to_account": "ACC_024",
+      "amount": 3200.0,
+      "timestamp": "2026-11-07T05:15:12+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0132",
+      "from_account": "ACC_025",
+      "to_account": "ACC_026",
+      "amount": 1850.0,
+      "timestamp": "2026-11-07T05:50:30+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0133",
+      "from_account": "ACC_027",
+      "to_account": "ACC_061",
+      "amount": 5120.0,
+      "timestamp": "2026-11-07T06:35:19+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0134",
+      "from_account": "ACC_028",
+      "to_account": "ACC_061",
+      "amount": 2340.0,
+      "timestamp": "2026-11-07T06:52:40+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0135",
+      "from_account": "ACC_029",
+      "to_account": "ACC_062",
+      "amount": 3100.0,
+      "timestamp": "2026-11-07T07:40:05+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0136",
+      "from_account": "ACC_030",
+      "to_account": "ACC_064",
+      "amount": 1450.0,
+      "timestamp": "2026-11-07T08:10:22+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0137",
+      "from_account": "ACC_031",
+      "to_account": "ACC_065",
+      "amount": 28900.0,
+      "timestamp": "2026-11-07T08:45:50+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0138",
+      "from_account": "ACC_032",
+      "to_account": "ACC_073",
+      "amount": 1650.0,
+      "timestamp": "2026-11-07T09:30:12+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0139",
+      "from_account": "ACC_033",
+      "to_account": "ACC_073",
+      "amount": 2100.0,
+      "timestamp": "2026-11-07T09:55:33+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0140",
+      "from_account": "ACC_034",
+      "to_account": "ACC_073",
+      "amount": 1940.0,
+      "timestamp": "2026-11-07T10:20:48+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0141",
+      "from_account": "ACC_035",
+      "to_account": "ACC_094",
+      "amount": 49600.0,
+      "timestamp": "2026-11-08T05:32:10+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0142",
+      "from_account": "ACC_036",
+      "to_account": "ACC_094",
+      "amount": 49100.0,
+      "timestamp": "2026-11-08T05:36:45+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0143",
+      "from_account": "ACC_037",
+      "to_account": "ACC_094",
+      "amount": 49750.0,
+      "timestamp": "2026-11-08T05:41:20+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0144",
+      "from_account": "ACC_038",
+      "to_account": "ACC_094",
+      "amount": 48800.0,
+      "timestamp": "2026-11-08T05:45:55+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0145",
+      "from_account": "ACC_094",
+      "to_account": "ACC_098",
+      "amount": 193500.0,
+      "timestamp": "2026-11-08T06:00:10+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0146",
+      "from_account": "ACC_098",
+      "to_account": "ACC_081",
+      "amount": 48000.0,
+      "timestamp": "2026-11-08T06:12:05+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0147",
+      "from_account": "ACC_098",
+      "to_account": "ACC_082",
+      "amount": 48000.0,
+      "timestamp": "2026-11-08T06:15:30+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0148",
+      "from_account": "ACC_098",
+      "to_account": "ACC_083",
+      "amount": 48000.0,
+      "timestamp": "2026-11-08T06:19:12+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0149",
+      "from_account": "ACC_098",
+      "to_account": "ACC_084",
+      "amount": 47500.0,
+      "timestamp": "2026-11-08T06:23:40+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0150",
+      "from_account": "ACC_041",
+      "to_account": "ACC_075",
+      "amount": 1500.0,
+      "timestamp": "2026-11-08T08:30:05+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0151",
+      "from_account": "ACC_042",
+      "to_account": "ACC_075",
+      "amount": 1500.0,
+      "timestamp": "2026-11-08T08:32:18+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0152",
+      "from_account": "ACC_043",
+      "to_account": "ACC_075",
+      "amount": 1500.0,
+      "timestamp": "2026-11-08T08:35:40+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0153",
+      "from_account": "ACC_044",
+      "to_account": "ACC_075",
+      "amount": 1500.0,
+      "timestamp": "2026-11-08T08:39:12+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0154",
+      "from_account": "ACC_045",
+      "to_account": "ACC_075",
+      "amount": 1500.0,
+      "timestamp": "2026-11-08T08:42:55+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0155",
+      "from_account": "ACC_046",
+      "to_account": "ACC_075",
+      "amount": 1500.0,
+      "timestamp": "2026-11-08T08:45:30+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0156",
+      "from_account": "ACC_047",
+      "to_account": "ACC_075",
+      "amount": 1500.0,
+      "timestamp": "2026-11-08T08:48:05+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0157",
+      "from_account": "ACC_048",
+      "to_account": "ACC_075",
+      "amount": 1500.0,
+      "timestamp": "2026-11-08T08:51:44+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0158",
+      "from_account": "ACC_075",
+      "to_account": "ACC_064",
+      "amount": 8500.0,
+      "timestamp": "2026-11-08T12:30:10+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0159",
+      "from_account": "ACC_075",
+      "to_account": "ACC_065",
+      "amount": 3500.0,
+      "timestamp": "2026-11-08T12:35:22+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0160",
+      "from_account": "ACC_001",
+      "to_account": "ACC_061",
+      "amount": 2890.0,
+      "timestamp": "2026-11-09T04:42:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0161",
+      "from_account": "ACC_002",
+      "to_account": "ACC_062",
+      "amount": 1400.0,
+      "timestamp": "2026-11-09T05:05:15+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0162",
+      "from_account": "ACC_003",
+      "to_account": "ACC_063",
+      "amount": 820.0,
+      "timestamp": "2026-11-09T05:35:40+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0163",
+      "from_account": "ACC_004",
+      "to_account": "ACC_064",
+      "amount": 650.0,
+      "timestamp": "2026-11-09T07:00:10+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0164",
+      "from_account": "ACC_005",
+      "to_account": "ACC_066",
+      "amount": 1999.0,
+      "timestamp": "2026-11-09T07:45:22+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0165",
+      "from_account": "ACC_006",
+      "to_account": "ACC_066",
+      "amount": 3499.0,
+      "timestamp": "2026-11-09T07:50:45+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0166",
+      "from_account": "ACC_007",
+      "to_account": "ACC_066",
+      "amount": 2899.0,
+      "timestamp": "2026-11-09T07:58:12+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0167",
+      "from_account": "ACC_008",
+      "to_account": "ACC_066",
+      "amount": 4599.0,
+      "timestamp": "2026-11-09T08:05:50+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0168",
+      "from_account": "ACC_066",
+      "to_account": "ACC_061",
+      "amount": 6498.0,
+      "timestamp": "2026-11-09T17:30:05+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0169",
+      "from_account": "ACC_066",
+      "to_account": "ACC_065",
+      "amount": 6498.0,
+      "timestamp": "2026-11-09T17:30:15+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0170",
+      "from_account": "ACC_049",
+      "to_account": "ACC_076",
+      "amount": 150000.0,
+      "timestamp": "2026-11-10T04:00:05+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0171",
+      "from_account": "ACC_076",
+      "to_account": "ACC_077",
+      "amount": 146000.0,
+      "timestamp": "2026-11-10T04:08:19+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0172",
+      "from_account": "ACC_077",
+      "to_account": "ACC_078",
+      "amount": 142500.0,
+      "timestamp": "2026-11-10T04:17:02+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0173",
+      "from_account": "ACC_078",
+      "to_account": "ACC_079",
+      "amount": 139000.0,
+      "timestamp": "2026-11-10T04:25:44+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0174",
+      "from_account": "ACC_079",
+      "to_account": "ACC_080",
+      "amount": 135500.0,
+      "timestamp": "2026-11-10T04:34:12+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0175",
+      "from_account": "ACC_080",
+      "to_account": "ACC_081",
+      "amount": 132000.0,
+      "timestamp": "2026-11-10T04:42:30+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0176",
+      "from_account": "ACC_081",
+      "to_account": "ACC_082",
+      "amount": 128500.0,
+      "timestamp": "2026-11-10T04:51:05+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0177",
+      "from_account": "ACC_082",
+      "to_account": "ACC_083",
+      "amount": 125000.0,
+      "timestamp": "2026-11-10T04:59:50+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0178",
+      "from_account": "ACC_083",
+      "to_account": "ACC_084",
+      "amount": 121500.0,
+      "timestamp": "2026-11-10T05:08:15+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0179",
+      "from_account": "ACC_084",
+      "to_account": "ACC_085",
+      "amount": 118000.0,
+      "timestamp": "2026-11-10T05:16:40+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0181",
+      "from_account": "ACC_009",
+      "to_account": "ACC_010",
+      "amount": 2500.0,
+      "timestamp": "2026-11-10T06:40:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0182",
+      "from_account": "ACC_011",
+      "to_account": "ACC_012",
+      "amount": 1800.0,
+      "timestamp": "2026-11-10T07:10:15+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0183",
+      "from_account": "ACC_013",
+      "to_account": "ACC_014",
+      "amount": 950.0,
+      "timestamp": "2026-11-10T07:45:30+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0184",
+      "from_account": "ACC_015",
+      "to_account": "ACC_016",
+      "amount": 3100.0,
+      "timestamp": "2026-11-10T08:35:20+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0185",
+      "from_account": "ACC_017",
+      "to_account": "ACC_018",
+      "amount": 1250.0,
+      "timestamp": "2026-11-10T09:20:10+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0186",
+      "from_account": "ACC_019",
+      "to_account": "ACC_020",
+      "amount": 4200.0,
+      "timestamp": "2026-11-10T10:00:45+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0187",
+      "from_account": "ACC_050",
+      "to_account": "ACC_086",
+      "amount": 180000.0,
+      "timestamp": "2026-11-10T20:40:05+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0188",
+      "from_account": "ACC_051",
+      "to_account": "ACC_086",
+      "amount": 165000.0,
+      "timestamp": "2026-11-10T20:44:22+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0189",
+      "from_account": "ACC_086",
+      "to_account": "ACC_087",
+      "amount": 170000.0,
+      "timestamp": "2026-11-10T20:52:10+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0190",
+      "from_account": "ACC_086",
+      "to_account": "ACC_088",
+      "amount": 168000.0,
+      "timestamp": "2026-11-10T20:55:45+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0191",
+      "from_account": "ACC_087",
+      "to_account": "ACC_089",
+      "amount": 165000.0,
+      "timestamp": "2026-11-10T21:03:19+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0192",
+      "from_account": "ACC_088",
+      "to_account": "ACC_090",
+      "amount": 163000.0,
+      "timestamp": "2026-11-10T21:08:05+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0193",
+      "from_account": "ACC_089",
+      "to_account": "ACC_091",
+      "amount": 160000.0,
+      "timestamp": "2026-11-10T21:14:50+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0194",
+      "from_account": "ACC_090",
+      "to_account": "ACC_092",
+      "amount": 158000.0,
+      "timestamp": "2026-11-10T21:20:12+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0197",
+      "from_account": "ACC_021",
+      "to_account": "ACC_061",
+      "amount": 3890.0,
+      "timestamp": "2026-11-11T04:45:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0198",
+      "from_account": "ACC_022",
+      "to_account": "ACC_061",
+      "amount": 2140.0,
+      "timestamp": "2026-11-11T05:10:12+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0199",
+      "from_account": "ACC_023",
+      "to_account": "ACC_062",
+      "amount": 1950.0,
+      "timestamp": "2026-11-11T05:40:30+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0200",
+      "from_account": "ACC_024",
+      "to_account": "ACC_063",
+      "amount": 1340.0,
+      "timestamp": "2026-11-11T06:25:19+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0201",
+      "from_account": "ACC_025",
+      "to_account": "ACC_064",
+      "amount": 920.0,
+      "timestamp": "2026-11-11T07:00:45+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0202",
+      "from_account": "ACC_026",
+      "to_account": "ACC_065",
+      "amount": 19500.0,
+      "timestamp": "2026-11-11T07:45:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0203",
+      "from_account": "ACC_027",
+      "to_account": "ACC_073",
+      "amount": 2840.0,
+      "timestamp": "2026-11-11T08:35:10+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0204",
+      "from_account": "ACC_028",
+      "to_account": "ACC_073",
+      "amount": 3190.0,
+      "timestamp": "2026-11-11T08:52:35+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0205",
+      "from_account": "ACC_029",
+      "to_account": "ACC_073",
+      "amount": 2650.0,
+      "timestamp": "2026-11-11T09:18:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0206",
+      "from_account": "ACC_030",
+      "to_account": "ACC_073",
+      "amount": 3410.0,
+      "timestamp": "2026-11-11T09:40:25+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0207",
+      "from_account": "ACC_061",
+      "to_account": "ACC_074",
+      "amount": 52000.0,
+      "timestamp": "2026-11-11T11:30:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0208",
+      "from_account": "ACC_039",
+      "to_account": "ACC_095",
+      "amount": 49400.0,
+      "timestamp": "2026-11-12T04:35:10+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0209",
+      "from_account": "ACC_040",
+      "to_account": "ACC_095",
+      "amount": 49100.0,
+      "timestamp": "2026-11-12T04:39:30+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0210",
+      "from_account": "ACC_095",
+      "to_account": "ACC_099",
+      "amount": 96500.0,
+      "timestamp": "2026-11-12T04:55:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0211",
+      "from_account": "ACC_052",
+      "to_account": "ACC_096",
+      "amount": 49800.0,
+      "timestamp": "2026-11-12T05:00:15+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0212",
+      "from_account": "ACC_053",
+      "to_account": "ACC_096",
+      "amount": 49300.0,
+      "timestamp": "2026-11-12T05:05:40+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0213",
+      "from_account": "ACC_096",
+      "to_account": "ACC_100",
+      "amount": 97000.0,
+      "timestamp": "2026-11-12T05:20:12+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0214",
+      "from_account": "ACC_099",
+      "to_account": "ACC_086",
+      "amount": 48000.0,
+      "timestamp": "2026-11-12T05:35:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0215",
+      "from_account": "ACC_100",
+      "to_account": "ACC_087",
+      "amount": 48500.0,
+      "timestamp": "2026-11-12T05:40:22+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0216",
+      "from_account": "ACC_086",
+      "to_account": "ACC_088",
+      "amount": 46500.0,
+      "timestamp": "2026-11-12T05:48:45+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0217",
+      "from_account": "ACC_087",
+      "to_account": "ACC_089",
+      "amount": 47000.0,
+      "timestamp": "2026-11-12T05:54:10+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0218",
+      "from_account": "ACC_031",
+      "to_account": "ACC_032",
+      "amount": 2100.0,
+      "timestamp": "2026-11-12T06:45:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0219",
+      "from_account": "ACC_033",
+      "to_account": "ACC_034",
+      "amount": 1450.0,
+      "timestamp": "2026-11-12T07:10:20+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0220",
+      "from_account": "ACC_035",
+      "to_account": "ACC_036",
+      "amount": 3300.0,
+      "timestamp": "2026-11-12T07:40:05+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0221",
+      "from_account": "ACC_037",
+      "to_account": "ACC_038",
+      "amount": 2750.0,
+      "timestamp": "2026-11-12T08:05:50+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0222",
+      "from_account": "ACC_039",
+      "to_account": "ACC_040",
+      "amount": 1900.0,
+      "timestamp": "2026-11-12T08:35:12+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0223",
+      "from_account": "ACC_041",
+      "to_account": "ACC_042",
+      "amount": 850.0,
+      "timestamp": "2026-11-12T09:00:40+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0224",
+      "from_account": "ACC_043",
+      "to_account": "ACC_044",
+      "amount": 1200.0,
+      "timestamp": "2026-11-12T09:30:18+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0225",
+      "from_account": "ACC_045",
+      "to_account": "ACC_046",
+      "amount": 1600.0,
+      "timestamp": "2026-11-12T09:55:33+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0226",
+      "from_account": "ACC_047",
+      "to_account": "ACC_048",
+      "amount": 2400.0,
+      "timestamp": "2026-11-12T10:20:05+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0227",
+      "from_account": "ACC_049",
+      "to_account": "ACC_050",
+      "amount": 3100.0,
+      "timestamp": "2026-11-12T10:45:49+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0228",
+      "from_account": "ACC_051",
+      "to_account": "ACC_052",
+      "amount": 1750.0,
+      "timestamp": "2026-11-12T11:10:10+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0229",
+      "from_account": "ACC_053",
+      "to_account": "ACC_054",
+      "amount": 2900.0,
+      "timestamp": "2026-11-12T11:35:22+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0230",
+      "from_account": "ACC_055",
+      "to_account": "ACC_056",
+      "amount": 1350.0,
+      "timestamp": "2026-11-12T12:00:45+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0231",
+      "from_account": "ACC_057",
+      "to_account": "ACC_058",
+      "amount": 2250.0,
+      "timestamp": "2026-11-12T12:25:18+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0232",
+      "from_account": "ACC_059",
+      "to_account": "ACC_060",
+      "amount": 1950.0,
+      "timestamp": "2026-11-12T12:50:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0233",
+      "from_account": "ACC_001",
+      "to_account": "ACC_063",
+      "amount": 1450.0,
+      "timestamp": "2026-11-13T03:45:10+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0234",
+      "from_account": "ACC_002",
+      "to_account": "ACC_064",
+      "amount": 780.0,
+      "timestamp": "2026-11-13T04:10:25+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0235",
+      "from_account": "ACC_003",
+      "to_account": "ACC_061",
+      "amount": 4320.0,
+      "timestamp": "2026-11-13T04:35:50+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0236",
+      "from_account": "ACC_004",
+      "to_account": "ACC_062",
+      "amount": 2500.0,
+      "timestamp": "2026-11-13T05:00:12+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0237",
+      "from_account": "ACC_005",
+      "to_account": "ACC_065",
+      "amount": 34500.0,
+      "timestamp": "2026-11-13T05:30:05+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0238",
+      "from_account": "ACC_006",
+      "to_account": "ACC_061",
+      "amount": 1980.0,
+      "timestamp": "2026-11-13T05:55:40+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0239",
+      "from_account": "ACC_007",
+      "to_account": "ACC_062",
+      "amount": 1200.0,
+      "timestamp": "2026-11-13T06:20:18+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0240",
+      "from_account": "ACC_008",
+      "to_account": "ACC_063",
+      "amount": 2150.0,
+      "timestamp": "2026-11-13T06:45:33+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0241",
+      "from_account": "ACC_009",
+      "to_account": "ACC_064",
+      "amount": 1120.0,
+      "timestamp": "2026-11-13T07:10:05+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0242",
+      "from_account": "ACC_010",
+      "to_account": "ACC_061",
+      "amount": 3650.0,
+      "timestamp": "2026-11-13T07:35:49+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0243",
+      "from_account": "ACC_011",
+      "to_account": "ACC_062",
+      "amount": 2800.0,
+      "timestamp": "2026-11-13T08:00:10+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0244",
+      "from_account": "ACC_012",
+      "to_account": "ACC_064",
+      "amount": 940.0,
+      "timestamp": "2026-11-13T08:25:22+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0245",
+      "from_account": "ACC_054",
+      "to_account": "ACC_076",
+      "amount": 88000.0,
+      "timestamp": "2026-11-13T09:30:10+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0246",
+      "from_account": "ACC_076",
+      "to_account": "ACC_078",
+      "amount": 86000.0,
+      "timestamp": "2026-11-13T09:41:45+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0247",
+      "from_account": "ACC_078",
+      "to_account": "ACC_080",
+      "amount": 84000.0,
+      "timestamp": "2026-11-13T09:53:12+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0248",
+      "from_account": "ACC_013",
+      "to_account": "ACC_068",
+      "amount": 1500.0,
+      "timestamp": "2026-11-13T13:40:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0249",
+      "from_account": "ACC_014",
+      "to_account": "ACC_068",
+      "amount": 1500.0,
+      "timestamp": "2026-11-13T13:42:15+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0250",
+      "from_account": "ACC_015",
+      "to_account": "ACC_068",
+      "amount": 1500.0,
+      "timestamp": "2026-11-13T13:44:30+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0251",
+      "from_account": "ACC_016",
+      "to_account": "ACC_068",
+      "amount": 1500.0,
+      "timestamp": "2026-11-13T13:46:45+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0252",
+      "from_account": "ACC_068",
+      "to_account": "ACC_064",
+      "amount": 6000.0,
+      "timestamp": "2026-11-13T14:00:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0253",
+      "from_account": "ACC_017",
+      "to_account": "ACC_071",
+      "amount": 26000.0,
+      "timestamp": "2026-11-14T03:40:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0254",
+      "from_account": "ACC_018",
+      "to_account": "ACC_071",
+      "amount": 24500.0,
+      "timestamp": "2026-11-14T03:55:15+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0255",
+      "from_account": "ACC_019",
+      "to_account": "ACC_071",
+      "amount": 27000.0,
+      "timestamp": "2026-11-14T04:10:30+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0256",
+      "from_account": "ACC_020",
+      "to_account": "ACC_071",
+      "amount": 29500.0,
+      "timestamp": "2026-11-14T04:25:45+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0257",
+      "from_account": "ACC_021",
+      "to_account": "ACC_072",
+      "amount": 2000.0,
+      "timestamp": "2026-11-14T04:45:10+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0258",
+      "from_account": "ACC_022",
+      "to_account": "ACC_072",
+      "amount": 1500.0,
+      "timestamp": "2026-11-14T05:00:22+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0259",
+      "from_account": "ACC_023",
+      "to_account": "ACC_072",
+      "amount": 3000.0,
+      "timestamp": "2026-11-14T05:15:40+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0260",
+      "from_account": "ACC_024",
+      "to_account": "ACC_072",
+      "amount": 1000.0,
+      "timestamp": "2026-11-14T05:30:05+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0261",
+      "from_account": "ACC_025",
+      "to_account": "ACC_075",
+      "amount": 2000.0,
+      "timestamp": "2026-11-14T05:50:18+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0262",
+      "from_account": "ACC_026",
+      "to_account": "ACC_075",
+      "amount": 2000.0,
+      "timestamp": "2026-11-14T06:05:30+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0263",
+      "from_account": "ACC_027",
+      "to_account": "ACC_075",
+      "amount": 2000.0,
+      "timestamp": "2026-11-14T06:20:45+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0264",
+      "from_account": "ACC_028",
+      "to_account": "ACC_075",
+      "amount": 2000.0,
+      "timestamp": "2026-11-14T06:35:12+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0265",
+      "from_account": "ACC_029",
+      "to_account": "ACC_066",
+      "amount": 1899.0,
+      "timestamp": "2026-11-14T07:00:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0266",
+      "from_account": "ACC_030",
+      "to_account": "ACC_066",
+      "amount": 2499.0,
+      "timestamp": "2026-11-14T07:15:15+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0267",
+      "from_account": "ACC_031",
+      "to_account": "ACC_066",
+      "amount": 3299.0,
+      "timestamp": "2026-11-14T07:30:30+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0268",
+      "from_account": "ACC_032",
+      "to_account": "ACC_066",
+      "amount": 1499.0,
+      "timestamp": "2026-11-14T07:45:45+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0269",
+      "from_account": "ACC_066",
+      "to_account": "ACC_063",
+      "amount": 9196.0,
+      "timestamp": "2026-11-14T17:30:10+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0270",
+      "from_account": "ACC_033",
+      "to_account": "ACC_061",
+      "amount": 4150.0,
+      "timestamp": "2026-11-15T03:40:05+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0271",
+      "from_account": "ACC_034",
+      "to_account": "ACC_062",
+      "amount": 1750.0,
+      "timestamp": "2026-11-15T03:55:20+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0272",
+      "from_account": "ACC_035",
+      "to_account": "ACC_063",
+      "amount": 980.0,
+      "timestamp": "2026-11-15T04:10:35+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0273",
+      "from_account": "ACC_036",
+      "to_account": "ACC_064",
+      "amount": 1320.0,
+      "timestamp": "2026-11-15T04:25:50+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0274",
+      "from_account": "ACC_037",
+      "to_account": "ACC_065",
+      "amount": 22400.0,
+      "timestamp": "2026-11-15T04:40:12+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0275",
+      "from_account": "ACC_038",
+      "to_account": "ACC_073",
+      "amount": 2310.0,
+      "timestamp": "2026-11-15T04:55:30+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0276",
+      "from_account": "ACC_039",
+      "to_account": "ACC_073",
+      "amount": 1870.0,
+      "timestamp": "2026-11-15T05:10:45+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0277",
+      "from_account": "ACC_040",
+      "to_account": "ACC_073",
+      "amount": 2940.0,
+      "timestamp": "2026-11-15T05:25:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0278",
+      "from_account": "ACC_041",
+      "to_account": "ACC_061",
+      "amount": 1640.0,
+      "timestamp": "2026-11-15T05:40:15+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0279",
+      "from_account": "ACC_042",
+      "to_account": "ACC_062",
+      "amount": 900.0,
+      "timestamp": "2026-11-15T05:55:30+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0280",
+      "from_account": "ACC_043",
+      "to_account": "ACC_063",
+      "amount": 1150.0,
+      "timestamp": "2026-11-15T06:10:45+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0281",
+      "from_account": "ACC_044",
+      "to_account": "ACC_064",
+      "amount": 680.0,
+      "timestamp": "2026-11-15T06:25:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0282",
+      "from_account": "ACC_045",
+      "to_account": "ACC_061",
+      "amount": 3290.0,
+      "timestamp": "2026-11-15T06:40:15+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0283",
+      "from_account": "ACC_046",
+      "to_account": "ACC_062",
+      "amount": 2100.0,
+      "timestamp": "2026-11-15T06:55:30+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0284",
+      "from_account": "ACC_047",
+      "to_account": "ACC_063",
+      "amount": 740.0,
+      "timestamp": "2026-11-15T07:10:45+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0285",
+      "from_account": "ACC_048",
+      "to_account": "ACC_064",
+      "amount": 1590.0,
+      "timestamp": "2026-11-15T07:25:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0286",
+      "from_account": "ACC_049",
+      "to_account": "ACC_061",
+      "amount": 2840.0,
+      "timestamp": "2026-11-15T07:40:15+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0287",
+      "from_account": "ACC_050",
+      "to_account": "ACC_062",
+      "amount": 1600.0,
+      "timestamp": "2026-11-15T07:55:30+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0288",
+      "from_account": "ACC_051",
+      "to_account": "ACC_063",
+      "amount": 2300.0,
+      "timestamp": "2026-11-15T08:10:45+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0289",
+      "from_account": "ACC_052",
+      "to_account": "ACC_064",
+      "amount": 890.0,
+      "timestamp": "2026-11-15T08:25:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0290",
+      "from_account": "ACC_053",
+      "to_account": "ACC_073",
+      "amount": 2120.0,
+      "timestamp": "2026-11-15T08:40:15+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0291",
+      "from_account": "ACC_054",
+      "to_account": "ACC_073",
+      "amount": 1780.0,
+      "timestamp": "2026-11-15T08:55:30+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0292",
+      "from_account": "ACC_055",
+      "to_account": "ACC_073",
+      "amount": 2590.0,
+      "timestamp": "2026-11-15T09:10:45+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0293",
+      "from_account": "ACC_056",
+      "to_account": "ACC_073",
+      "amount": 3100.0,
+      "timestamp": "2026-11-15T09:25:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0294",
+      "from_account": "ACC_057",
+      "to_account": "ACC_073",
+      "amount": 1950.0,
+      "timestamp": "2026-11-15T09:40:15+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0295",
+      "from_account": "ACC_058",
+      "to_account": "ACC_073",
+      "amount": 2240.0,
+      "timestamp": "2026-11-15T09:55:30+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0296",
+      "from_account": "ACC_059",
+      "to_account": "ACC_073",
+      "amount": 1690.0,
+      "timestamp": "2026-11-15T10:10:45+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0297",
+      "from_account": "ACC_060",
+      "to_account": "ACC_073",
+      "amount": 2810.0,
+      "timestamp": "2026-11-15T10:25:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0298",
+      "from_account": "ACC_001",
+      "to_account": "ACC_002",
+      "amount": 500.0,
+      "timestamp": "2026-11-15T10:40:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0299",
+      "from_account": "ACC_003",
+      "to_account": "ACC_004",
+      "amount": 750.0,
+      "timestamp": "2026-11-15T10:50:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0300",
+      "from_account": "ACC_005",
+      "to_account": "ACC_006",
+      "amount": 1200.0,
+      "timestamp": "2026-11-15T11:00:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0301",
+      "from_account": "ACC_007",
+      "to_account": "ACC_008",
+      "amount": 900.0,
+      "timestamp": "2026-11-15T11:10:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0302",
+      "from_account": "ACC_009",
+      "to_account": "ACC_011",
+      "amount": 1500.0,
+      "timestamp": "2026-11-15T11:20:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0303",
+      "from_account": "ACC_012",
+      "to_account": "ACC_015",
+      "amount": 2100.0,
+      "timestamp": "2026-11-15T11:30:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0304",
+      "from_account": "ACC_016",
+      "to_account": "ACC_019",
+      "amount": 650.0,
+      "timestamp": "2026-11-15T11:40:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0305",
+      "from_account": "ACC_020",
+      "to_account": "ACC_022",
+      "amount": 1800.0,
+      "timestamp": "2026-11-15T11:50:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0306",
+      "from_account": "ACC_024",
+      "to_account": "ACC_027",
+      "amount": 1100.0,
+      "timestamp": "2026-11-15T12:00:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0307",
+      "from_account": "ACC_028",
+      "to_account": "ACC_031",
+      "amount": 2400.0,
+      "timestamp": "2026-11-15T12:10:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0308",
+      "from_account": "ACC_033",
+      "to_account": "ACC_036",
+      "amount": 950.0,
+      "timestamp": "2026-11-15T12:20:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0309",
+      "from_account": "ACC_037",
+      "to_account": "ACC_040",
+      "amount": 1300.0,
+      "timestamp": "2026-11-15T12:30:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0310",
+      "from_account": "ACC_042",
+      "to_account": "ACC_045",
+      "amount": 800.0,
+      "timestamp": "2026-11-15T12:40:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0311",
+      "from_account": "ACC_046",
+      "to_account": "ACC_049",
+      "amount": 1700.0,
+      "timestamp": "2026-11-15T12:50:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0312",
+      "from_account": "ACC_050",
+      "to_account": "ACC_053",
+      "amount": 1400.0,
+      "timestamp": "2026-11-15T13:00:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0313",
+      "from_account": "ACC_054",
+      "to_account": "ACC_057",
+      "amount": 2000.0,
+      "timestamp": "2026-11-15T13:10:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0314",
+      "from_account": "ACC_058",
+      "to_account": "ACC_060",
+      "amount": 1150.0,
+      "timestamp": "2026-11-15T13:20:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0315",
+      "from_account": "ACC_065",
+      "to_account": "ACC_074",
+      "amount": 95000.0,
+      "timestamp": "2026-11-15T13:30:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0316",
+      "from_account": "ACC_062",
+      "to_account": "ACC_074",
+      "amount": 38000.0,
+      "timestamp": "2026-11-15T13:40:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    },
+    {
+      "tx_id": "TXN_0317",
+      "from_account": "ACC_071",
+      "to_account": "ACC_074",
+      "amount": 29000.0,
+      "timestamp": "2026-11-15T13:50:00+00:00",
+      "channel": "IMPS",
+      "evidence_type": "OBSERVED_LEDGER_FACT"
+    }
+  ],
+  "candidate_chains": [
+    {
+      "chain_id": "CHAIN_001",
+      "accounts_path": [
+        "ACC_049",
+        "ACC_076",
+        "ACC_077",
+        "ACC_078",
+        "ACC_079",
+        "ACC_080",
+        "ACC_081"
+      ],
+      "transaction_ids": [
+        "TXN_0170",
+        "TXN_0171",
+        "TXN_0172",
+        "TXN_0173",
+        "TXN_0174",
+        "TXN_0175"
+      ],
+      "hop_count": 6,
+      "duration_minutes": 42.42,
+      "mean_hop_dwell_minutes": 8.48,
+      "initial_amount": 150000.0,
+      "terminal_amount": 132000.0,
+      "net_retention_ratio": 0.88,
+      "step_retention_ratios": [
+        0.9733,
+        0.976,
+        0.9754,
+        0.9748,
+        0.9742
+      ],
+      "component_scores": {
+        "bank_ai_subscore": 0.6377,
+        "conservation_subscore": 0.899,
+        "velocity_subscore": 0.8682,
+        "length_subscore": 1.0
+      },
+      "chain_risk_score": 82.16,
+      "risk_band": "CRITICAL",
+      "explanation_codes": [
+        "MULTI_HOP_LAYERING_DEPTH_6",
+        "RAPID_PASS_THROUGH_DWELL_8.5M",
+        "HIGH_AMOUNT_CONSERVATION_88%",
+        "CONTAINS_4_BANK_AI_ALERTED_ACCOUNTS"
+      ],
+      "fungibility_caveat": "Transfers TXN_0170, TXN_0171, TXN_0172, TXN_0173, TXN_0174, TXN_0175 show 88.0% end-to-end retention across 6 hops within 42.4 minutes. Matching amounts do NOT prove the same funds passed through ACC_076, ACC_077, ACC_078, ACC_079, ACC_080 due to account balance fungibility; this chain is an inferred flow hypothesis.",
+      "evidence_classification": "INFERRED_TEMPORAL_FLOW_HYPOTHESIS"
+    },
+    {
+      "chain_id": "CHAIN_002",
+      "accounts_path": [
+        "ACC_041",
+        "ACC_076",
+        "ACC_077",
+        "ACC_078",
+        "ACC_079",
+        "ACC_080"
+      ],
+      "transaction_ids": [
+        "TXN_0072",
+        "TXN_0073",
+        "TXN_0074",
+        "TXN_0075",
+        "TXN_0076"
+      ],
+      "hop_count": 5,
+      "duration_minutes": 37.75,
+      "mean_hop_dwell_minutes": 9.44,
+      "initial_amount": 120000.0,
+      "terminal_amount": 108000.0,
+      "net_retention_ratio": 0.9,
+      "step_retention_ratios": [
+        0.975,
+        0.9744,
+        0.9737,
+        0.973
+      ],
+      "component_scores": {
+        "bank_ai_subscore": 0.6187,
+        "conservation_subscore": 0.896,
+        "velocity_subscore": 0.8545,
+        "length_subscore": 1.0
+      },
+      "chain_risk_score": 81.14,
+      "risk_band": "CRITICAL",
+      "explanation_codes": [
+        "MULTI_HOP_LAYERING_DEPTH_5",
+        "RAPID_PASS_THROUGH_DWELL_9.4M",
+        "HIGH_AMOUNT_CONSERVATION_90%",
+        "CONTAINS_3_BANK_AI_ALERTED_ACCOUNTS"
+      ],
+      "fungibility_caveat": "Transfers TXN_0072, TXN_0073, TXN_0074, TXN_0075, TXN_0076 show 90.0% end-to-end retention across 5 hops within 37.8 minutes. Matching amounts do NOT prove the same funds passed through ACC_076, ACC_077, ACC_078, ACC_079 due to account balance fungibility; this chain is an inferred flow hypothesis.",
+      "evidence_classification": "INFERRED_TEMPORAL_FLOW_HYPOTHESIS"
+    },
+    {
+      "chain_id": "CHAIN_003",
+      "accounts_path": [
+        "ACC_076",
+        "ACC_077",
+        "ACC_078",
+        "ACC_079",
+        "ACC_080",
+        "ACC_081",
+        "ACC_082"
+      ],
+      "transaction_ids": [
+        "TXN_0171",
+        "TXN_0172",
+        "TXN_0173",
+        "TXN_0174",
+        "TXN_0175",
+        "TXN_0176"
+      ],
+      "hop_count": 6,
+      "duration_minutes": 42.77,
+      "mean_hop_dwell_minutes": 8.55,
+      "initial_amount": 146000.0,
+      "terminal_amount": 128500.0,
+      "net_retention_ratio": 0.8801,
+      "step_retention_ratios": [
+        0.976,
+        0.9754,
+        0.9748,
+        0.9742,
+        0.9735
+      ],
+      "component_scores": {
+        "bank_ai_subscore": 0.5971,
+        "conservation_subscore": 0.8992,
+        "velocity_subscore": 0.8671,
+        "length_subscore": 1.0
+      },
+      "chain_risk_score": 80.72,
+      "risk_band": "CRITICAL",
+      "explanation_codes": [
+        "MULTI_HOP_LAYERING_DEPTH_6",
+        "RAPID_PASS_THROUGH_DWELL_8.6M",
+        "HIGH_AMOUNT_CONSERVATION_88%",
+        "CONTAINS_3_BANK_AI_ALERTED_ACCOUNTS"
+      ],
+      "fungibility_caveat": "Transfers TXN_0171, TXN_0172, TXN_0173, TXN_0174, TXN_0175, TXN_0176 show 88.0% end-to-end retention across 6 hops within 42.8 minutes. Matching amounts do NOT prove the same funds passed through ACC_077, ACC_078, ACC_079, ACC_080, ACC_081 due to account balance fungibility; this chain is an inferred flow hypothesis.",
+      "evidence_classification": "INFERRED_TEMPORAL_FLOW_HYPOTHESIS"
+    },
+    {
+      "chain_id": "CHAIN_004",
+      "accounts_path": [
+        "ACC_050",
+        "ACC_086",
+        "ACC_087",
+        "ACC_089",
+        "ACC_091"
+      ],
+      "transaction_ids": [
+        "TXN_0187",
+        "TXN_0189",
+        "TXN_0191",
+        "TXN_0193"
+      ],
+      "hop_count": 4,
+      "duration_minutes": 34.75,
+      "mean_hop_dwell_minutes": 11.58,
+      "initial_amount": 180000.0,
+      "terminal_amount": 160000.0,
+      "net_retention_ratio": 0.8889,
+      "step_retention_ratios": [
+        0.9444,
+        0.9706,
+        0.9697
+      ],
+      "component_scores": {
+        "bank_ai_subscore": 0.7808,
+        "conservation_subscore": 0.8463,
+        "velocity_subscore": 0.8244,
+        "length_subscore": 0.75
+      },
+      "chain_risk_score": 79.97,
+      "risk_band": "HIGH",
+      "explanation_codes": [
+        "MULTI_HOP_LAYERING_DEPTH_4",
+        "RAPID_PASS_THROUGH_DWELL_11.6M",
+        "HIGH_AMOUNT_CONSERVATION_89%",
+        "CONTAINS_5_BANK_AI_ALERTED_ACCOUNTS",
+        "HIGH_LOCAL_ANOMALY_PEAK_0.80"
+      ],
+      "fungibility_caveat": "Transfers TXN_0187, TXN_0189, TXN_0191, TXN_0193 show 88.9% end-to-end retention across 4 hops within 34.8 minutes. Matching amounts do NOT prove the same funds passed through ACC_086, ACC_087, ACC_089 due to account balance fungibility; this chain is an inferred flow hypothesis.",
+      "evidence_classification": "INFERRED_TEMPORAL_FLOW_HYPOTHESIS"
+    },
+    {
+      "chain_id": "CHAIN_005",
+      "accounts_path": [
+        "ACC_077",
+        "ACC_078",
+        "ACC_079",
+        "ACC_080",
+        "ACC_081",
+        "ACC_082",
+        "ACC_083"
+      ],
+      "transaction_ids": [
+        "TXN_0172",
+        "TXN_0173",
+        "TXN_0174",
+        "TXN_0175",
+        "TXN_0176",
+        "TXN_0177"
+      ],
+      "hop_count": 6,
+      "duration_minutes": 42.8,
+      "mean_hop_dwell_minutes": 8.56,
+      "initial_amount": 142500.0,
+      "terminal_amount": 125000.0,
+      "net_retention_ratio": 0.8772,
+      "step_retention_ratios": [
+        0.9754,
+        0.9748,
+        0.9742,
+        0.9735,
+        0.9728
+      ],
+      "component_scores": {
+        "bank_ai_subscore": 0.5526,
+        "conservation_subscore": 0.8965,
+        "velocity_subscore": 0.867,
+        "length_subscore": 1.0
+      },
+      "chain_risk_score": 79.09,
+      "risk_band": "HIGH",
+      "explanation_codes": [
+        "MULTI_HOP_LAYERING_DEPTH_6",
+        "RAPID_PASS_THROUGH_DWELL_8.6M",
+        "HIGH_AMOUNT_CONSERVATION_88%",
+        "CONTAINS_2_BANK_AI_ALERTED_ACCOUNTS"
+      ],
+      "fungibility_caveat": "Transfers TXN_0172, TXN_0173, TXN_0174, TXN_0175, TXN_0176, TXN_0177 show 87.7% end-to-end retention across 6 hops within 42.8 minutes. Matching amounts do NOT prove the same funds passed through ACC_078, ACC_079, ACC_080, ACC_081, ACC_082 due to account balance fungibility; this chain is an inferred flow hypothesis.",
+      "evidence_classification": "INFERRED_TEMPORAL_FLOW_HYPOTHESIS"
+    },
+    {
+      "chain_id": "CHAIN_006",
+      "accounts_path": [
+        "ACC_078",
+        "ACC_079",
+        "ACC_080",
+        "ACC_081",
+        "ACC_082",
+        "ACC_083",
+        "ACC_084"
+      ],
+      "transaction_ids": [
+        "TXN_0173",
+        "TXN_0174",
+        "TXN_0175",
+        "TXN_0176",
+        "TXN_0177",
+        "TXN_0178"
+      ],
+      "hop_count": 6,
+      "duration_minutes": 42.52,
+      "mean_hop_dwell_minutes": 8.5,
+      "initial_amount": 139000.0,
+      "terminal_amount": 121500.0,
+      "net_retention_ratio": 0.8741,
+      "step_retention_ratios": [
+        0.9748,
+        0.9742,
+        0.9735,
+        0.9728,
+        0.972
+      ],
+      "component_scores": {
+        "bank_ai_subscore": 0.5526,
+        "conservation_subscore": 0.8938,
+        "velocity_subscore": 0.8679,
+        "length_subscore": 1.0
+      },
+      "chain_risk_score": 79.04,
+      "risk_band": "HIGH",
+      "explanation_codes": [
+        "MULTI_HOP_LAYERING_DEPTH_6",
+        "RAPID_PASS_THROUGH_DWELL_8.5M",
+        "HIGH_AMOUNT_CONSERVATION_87%",
+        "CONTAINS_2_BANK_AI_ALERTED_ACCOUNTS"
+      ],
+      "fungibility_caveat": "Transfers TXN_0173, TXN_0174, TXN_0175, TXN_0176, TXN_0177, TXN_0178 show 87.4% end-to-end retention across 6 hops within 42.5 minutes. Matching amounts do NOT prove the same funds passed through ACC_079, ACC_080, ACC_081, ACC_082, ACC_083 due to account balance fungibility; this chain is an inferred flow hypothesis.",
+      "evidence_classification": "INFERRED_TEMPORAL_FLOW_HYPOTHESIS"
+    },
+    {
+      "chain_id": "CHAIN_007",
+      "accounts_path": [
+        "ACC_051",
+        "ACC_086",
+        "ACC_087",
+        "ACC_089",
+        "ACC_091"
+      ],
+      "transaction_ids": [
+        "TXN_0188",
+        "TXN_0189",
+        "TXN_0191",
+        "TXN_0193"
+      ],
+      "hop_count": 4,
+      "duration_minutes": 30.47,
+      "mean_hop_dwell_minutes": 10.16,
+      "initial_amount": 165000.0,
+      "terminal_amount": 160000.0,
+      "net_retention_ratio": 0.9697,
+      "step_retention_ratios": [
+        1.0303,
+        0.9706,
+        0.9697
+      ],
+      "component_scores": {
+        "bank_ai_subscore": 0.7248,
+        "conservation_subscore": 0.8067,
+        "velocity_subscore": 0.8443,
+        "length_subscore": 0.75
+      },
+      "chain_risk_score": 77.42,
+      "risk_band": "HIGH",
+      "explanation_codes": [
+        "MULTI_HOP_LAYERING_DEPTH_4",
+        "RAPID_PASS_THROUGH_DWELL_10.2M",
+        "HIGH_AMOUNT_CONSERVATION_97%",
+        "CONTAINS_4_BANK_AI_ALERTED_ACCOUNTS",
+        "HIGH_LOCAL_ANOMALY_PEAK_0.80"
+      ],
+      "fungibility_caveat": "Transfers TXN_0188, TXN_0189, TXN_0191, TXN_0193 show 97.0% end-to-end retention across 4 hops within 30.5 minutes. Matching amounts do NOT prove the same funds passed through ACC_086, ACC_087, ACC_089 due to account balance fungibility; this chain is an inferred flow hypothesis.",
+      "evidence_classification": "INFERRED_TEMPORAL_FLOW_HYPOTHESIS"
+    },
+    {
+      "chain_id": "CHAIN_008",
+      "accounts_path": [
+        "ACC_079",
+        "ACC_080",
+        "ACC_081",
+        "ACC_082",
+        "ACC_083",
+        "ACC_084",
+        "ACC_085"
+      ],
+      "transaction_ids": [
+        "TXN_0174",
+        "TXN_0175",
+        "TXN_0176",
+        "TXN_0177",
+        "TXN_0178",
+        "TXN_0179"
+      ],
+      "hop_count": 6,
+      "duration_minutes": 42.47,
+      "mean_hop_dwell_minutes": 8.49,
+      "initial_amount": 135500.0,
+      "terminal_amount": 118000.0,
+      "net_retention_ratio": 0.8708,
+      "step_retention_ratios": [
+        0.9742,
+        0.9735,
+        0.9728,
+        0.972,
+        0.9712
+      ],
+      "component_scores": {
+        "bank_ai_subscore": 0.4943,
+        "conservation_subscore": 0.8909,
+        "velocity_subscore": 0.868,
+        "length_subscore": 1.0
+      },
+      "chain_risk_score": 76.93,
+      "risk_band": "HIGH",
+      "explanation_codes": [
+        "MULTI_HOP_LAYERING_DEPTH_6",
+        "RAPID_PASS_THROUGH_DWELL_8.5M",
+        "HIGH_AMOUNT_CONSERVATION_87%",
+        "CONTAINS_1_BANK_AI_ALERTED_ACCOUNTS"
+      ],
+      "fungibility_caveat": "Transfers TXN_0174, TXN_0175, TXN_0176, TXN_0177, TXN_0178, TXN_0179 show 87.1% end-to-end retention across 6 hops within 42.5 minutes. Matching amounts do NOT prove the same funds passed through ACC_080, ACC_081, ACC_082, ACC_083, ACC_084 due to account balance fungibility; this chain is an inferred flow hypothesis.",
+      "evidence_classification": "INFERRED_TEMPORAL_FLOW_HYPOTHESIS"
+    },
+    {
+      "chain_id": "CHAIN_009",
+      "accounts_path": [
+        "ACC_051",
+        "ACC_086",
+        "ACC_088",
+        "ACC_090",
+        "ACC_092"
+      ],
+      "transaction_ids": [
+        "TXN_0188",
+        "TXN_0190",
+        "TXN_0192",
+        "TXN_0194"
+      ],
+      "hop_count": 4,
+      "duration_minutes": 35.83,
+      "mean_hop_dwell_minutes": 11.94,
+      "initial_amount": 165000.0,
+      "terminal_amount": 158000.0,
+      "net_retention_ratio": 0.9576,
+      "step_retention_ratios": [
+        1.0182,
+        0.9702,
+        0.9693
+      ],
+      "component_scores": {
+        "bank_ai_subscore": 0.6488,
+        "conservation_subscore": 0.8952,
+        "velocity_subscore": 0.8195,
+        "length_subscore": 0.75
+      },
+      "chain_risk_score": 76.48,
+      "risk_band": "HIGH",
+      "explanation_codes": [
+        "MULTI_HOP_LAYERING_DEPTH_4",
+        "RAPID_PASS_THROUGH_DWELL_11.9M",
+        "HIGH_AMOUNT_CONSERVATION_96%",
+        "CONTAINS_3_BANK_AI_ALERTED_ACCOUNTS"
+      ],
+      "fungibility_caveat": "Transfers TXN_0188, TXN_0190, TXN_0192, TXN_0194 show 95.8% end-to-end retention across 4 hops within 35.8 minutes. Matching amounts do NOT prove the same funds passed through ACC_086, ACC_088, ACC_090 due to account balance fungibility; this chain is an inferred flow hypothesis.",
+      "evidence_classification": "INFERRED_TEMPORAL_FLOW_HYPOTHESIS"
+    },
+    {
+      "chain_id": "CHAIN_010",
+      "accounts_path": [
+        "ACC_050",
+        "ACC_086",
+        "ACC_088",
+        "ACC_090",
+        "ACC_092"
+      ],
+      "transaction_ids": [
+        "TXN_0187",
+        "TXN_0190",
+        "TXN_0192",
+        "TXN_0194"
+      ],
+      "hop_count": 4,
+      "duration_minutes": 40.12,
+      "mean_hop_dwell_minutes": 13.37,
+      "initial_amount": 180000.0,
+      "terminal_amount": 158000.0,
+      "net_retention_ratio": 0.8778,
+      "step_retention_ratios": [
+        0.9333,
+        0.9702,
+        0.9693
+      ],
+      "component_scores": {
+        "bank_ai_subscore": 0.7048,
+        "conservation_subscore": 0.8305,
+        "velocity_subscore": 0.8002,
+        "length_subscore": 0.75
+      },
+      "chain_risk_score": 76.44,
+      "risk_band": "HIGH",
+      "explanation_codes": [
+        "MULTI_HOP_LAYERING_DEPTH_4",
+        "RAPID_PASS_THROUGH_DWELL_13.4M",
+        "HIGH_AMOUNT_CONSERVATION_88%",
+        "CONTAINS_4_BANK_AI_ALERTED_ACCOUNTS"
+      ],
+      "fungibility_caveat": "Transfers TXN_0187, TXN_0190, TXN_0192, TXN_0194 show 87.8% end-to-end retention across 4 hops within 40.1 minutes. Matching amounts do NOT prove the same funds passed through ACC_086, ACC_088, ACC_090 due to account balance fungibility; this chain is an inferred flow hypothesis.",
+      "evidence_classification": "INFERRED_TEMPORAL_FLOW_HYPOTHESIS"
+    },
+    {
+      "chain_id": "CHAIN_011",
+      "accounts_path": [
+        "ACC_054",
+        "ACC_076",
+        "ACC_078",
+        "ACC_080"
+      ],
+      "transaction_ids": [
+        "TXN_0245",
+        "TXN_0246",
+        "TXN_0247"
+      ],
+      "hop_count": 3,
+      "duration_minutes": 23.03,
+      "mean_hop_dwell_minutes": 11.52,
+      "initial_amount": 88000.0,
+      "terminal_amount": 84000.0,
+      "net_retention_ratio": 0.9545,
+      "step_retention_ratios": [
+        0.9773,
+        0.9767
+      ],
+      "component_scores": {
+        "bank_ai_subscore": 0.766,
+        "conservation_subscore": 0.908,
+        "velocity_subscore": 0.8254,
+        "length_subscore": 0.5
+      },
+      "chain_risk_score": 76.02,
+      "risk_band": "HIGH",
+      "explanation_codes": [
+        "MULTI_HOP_LAYERING_DEPTH_3",
+        "RAPID_PASS_THROUGH_DWELL_11.5M",
+        "HIGH_AMOUNT_CONSERVATION_95%",
+        "CONTAINS_4_BANK_AI_ALERTED_ACCOUNTS"
+      ],
+      "fungibility_caveat": "Transfers TXN_0245, TXN_0246, TXN_0247 show 95.5% end-to-end retention across 3 hops within 23.0 minutes. Matching amounts do NOT prove the same funds passed through ACC_076, ACC_078 due to account balance fungibility; this chain is an inferred flow hypothesis.",
+      "evidence_classification": "INFERRED_TEMPORAL_FLOW_HYPOTHESIS"
+    },
+    {
+      "chain_id": "CHAIN_012",
+      "accounts_path": [
+        "ACC_090",
+        "ACC_091",
+        "ACC_092"
+      ],
+      "transaction_ids": [
+        "TXN_0103",
+        "TXN_0104"
+      ],
+      "hop_count": 2,
+      "duration_minutes": 2.42,
+      "mean_hop_dwell_minutes": 2.42,
+      "initial_amount": 1.0,
+      "terminal_amount": 1.0,
+      "net_retention_ratio": 1.0,
+      "step_retention_ratios": [
+        1.0
+      ],
+      "component_scores": {
+        "bank_ai_subscore": 0.624,
+        "conservation_subscore": 1.0,
+        "velocity_subscore": 0.9605,
+        "length_subscore": 0.25
+      },
+      "chain_risk_score": 71.05,
+      "risk_band": "HIGH",
+      "explanation_codes": [
+        "MULTI_HOP_LAYERING_DEPTH_2",
+        "RAPID_PASS_THROUGH_DWELL_2.4M",
+        "HIGH_AMOUNT_CONSERVATION_100%",
+        "CONTAINS_2_BANK_AI_ALERTED_ACCOUNTS"
+      ],
+      "fungibility_caveat": "Transfers TXN_0103, TXN_0104 show 100.0% end-to-end retention across 2 hops within 2.4 minutes. Matching amounts do NOT prove the same funds passed through ACC_091 due to account balance fungibility; this chain is an inferred flow hypothesis.",
+      "evidence_classification": "INFERRED_TEMPORAL_FLOW_HYPOTHESIS"
+    },
+    {
+      "chain_id": "CHAIN_013",
+      "accounts_path": [
+        "ACC_099",
+        "ACC_086",
+        "ACC_088"
+      ],
+      "transaction_ids": [
+        "TXN_0214",
+        "TXN_0216"
+      ],
+      "hop_count": 2,
+      "duration_minutes": 13.75,
+      "mean_hop_dwell_minutes": 13.75,
+      "initial_amount": 48000.0,
+      "terminal_amount": 46500.0,
+      "net_retention_ratio": 0.9688,
+      "step_retention_ratios": [
+        0.9688
+      ],
+      "component_scores": {
+        "bank_ai_subscore": 0.764,
+        "conservation_subscore": 0.875,
+        "velocity_subscore": 0.7952,
+        "length_subscore": 0.25
+      },
+      "chain_risk_score": 69.52,
+      "risk_band": "HIGH",
+      "explanation_codes": [
+        "MULTI_HOP_LAYERING_DEPTH_2",
+        "RAPID_PASS_THROUGH_DWELL_13.8M",
+        "HIGH_AMOUNT_CONSERVATION_97%",
+        "CONTAINS_2_BANK_AI_ALERTED_ACCOUNTS"
+      ],
+      "fungibility_caveat": "Transfers TXN_0214, TXN_0216 show 96.9% end-to-end retention across 2 hops within 13.8 minutes. Matching amounts do NOT prove the same funds passed through ACC_086 due to account balance fungibility; this chain is an inferred flow hypothesis.",
+      "evidence_classification": "INFERRED_TEMPORAL_FLOW_HYPOTHESIS"
+    },
+    {
+      "chain_id": "CHAIN_014",
+      "accounts_path": [
+        "ACC_096",
+        "ACC_100",
+        "ACC_087",
+        "ACC_089"
+      ],
+      "transaction_ids": [
+        "TXN_0213",
+        "TXN_0215",
+        "TXN_0217"
+      ],
+      "hop_count": 3,
+      "duration_minutes": 33.97,
+      "mean_hop_dwell_minutes": 16.98,
+      "initial_amount": 97000.0,
+      "terminal_amount": 47000.0,
+      "net_retention_ratio": 0.4845,
+      "step_retention_ratios": [
+        0.5,
+        0.9691
+      ],
+      "component_scores": {
+        "bank_ai_subscore": 0.788,
+        "conservation_subscore": 0.4381,
+        "velocity_subscore": 0.7535,
+        "length_subscore": 0.5
+      },
+      "chain_risk_score": 63.6,
+      "risk_band": "HIGH",
+      "explanation_codes": [
+        "MULTI_HOP_LAYERING_DEPTH_3",
+        "SUB_HOUR_RELAY_DWELL_17.0M",
+        "CONTAINS_4_BANK_AI_ALERTED_ACCOUNTS",
+        "HIGH_LOCAL_ANOMALY_PEAK_0.80"
+      ],
+      "fungibility_caveat": "Transfers TXN_0213, TXN_0215, TXN_0217 show 48.5% end-to-end retention across 3 hops within 34.0 minutes. Matching amounts do NOT prove the same funds passed through ACC_100, ACC_087 due to account balance fungibility; this chain is an inferred flow hypothesis.",
+      "evidence_classification": "INFERRED_TEMPORAL_FLOW_HYPOTHESIS"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+# Bank AI settings. Change numbers here without editing Python.
+# Amounts use one currency so they can be compared. This prototype uses INR.
+
+currency: INR
+
+windows:
+  main_days: 7
+  recent_days: 1
+  baseline_days: 30
+  baseline_offset_days: 31
+  lookback_days: 90
+
+gate:
+  # Skip scoring when the last 7 days are too quiet. Ratios on tiny volumes are noise.
+  min_txn_7d: 3
+  min_in_value: 500
+
+caps:
+  velocity_ratio: 20
+  dwell_minutes: 10080
+  dormancy_days: 180
+
+# Points are additive. The maxima sum to 100.
+rules:
+  velocity:
+    code: MB_VEL_HIGH
+    feature: velocity_ratio_24h
+    tiers:
+      - {minimum: 5, points: 15}
+      - {minimum: 3, points: 8}
+  dwell:
+    code: MB_DWELL_SHORT
+    feature: dwell_median_min
+    tiers:
+      - {maximum: 30, points: 20}
+      - {maximum: 120, points: 10}
+  pass_through:
+    code: MB_PASSTHRU_HIGH
+    feature: pass_through_ratio_7d
+    tiers:
+      - {minimum: 0.90, points: 20}
+      - {minimum: 0.75, points: 10}
+  fan_in:
+    code: MB_FANIN_HIGH
+    feature: fan_in_7d
+    tiers:
+      - {minimum: 10, points: 10}
+      - {minimum: 6, points: 5}
+  fan_out:
+    code: MB_FANOUT_HIGH
+    feature: fan_out_7d
+    tiers:
+      - {minimum: 8, points: 10}
+      - {minimum: 4, points: 5}
+  dormancy:
+    code: MB_DORMANT_WAKE
+    feature: dormancy_gap_days
+    min_txn_count: 5
+    tiers:
+      - {minimum: 60, points: 15}
+      - {minimum: 30, points: 8}
+  new_payees:
+    code: MB_NEWPAYEE_HIGH
+    feature: new_payee_share_7d
+    tiers:
+      - {minimum: 0.8, points: 10}
+      - {minimum: 0.5, points: 5}
+
+# Notable bars for reason codes. A code is kept only when the feature crosses these.
+notable:
+  velocity_ratio_24h: 3
+  dwell_median_min: 120
+  pass_through_ratio_7d: 0.75
+  fan_in_7d: 6
+  fan_out_7d: 4
+  dormancy_gap_days: 30
+  new_payee_share_7d: 0.5
+
+blend:
+  ml_weight: 0.6
+  rule_weight: 0.4
+
+# Starting bands. Training may raise the HIGH cutoff so about 1.5% of validation accounts are HIGH or above.
+bands:
+  medium: 40
+  high: 70
+  critical: 85
+
+merchant_guard:
+  max_adjustment: 25
+  weights:
+    registered_or_business: 0.30
+    account_age_days: 0.10
+    repeat_payers: 0.20
+    stable_payee: 0.20
+    active_days: 0.20
+  thresholds:
+    account_age_days: 180
+    repeat_in_counterparty_share_90d: 0.5
+    top_payee_value_share_7d: 0.8
+    top_payee_history_count: 4
+    active_days_30d: 20
+  # If any guardrail is true, the merchant discount is not applied.
+  block_if:
+    dormancy_gap_days: 30
+    dormancy_min_txn_count: 5
+    new_payee_share_7d: 0.5
+    min_account_age_days: 30
+    fan_in_7d: 10
+    dwell_median_min: 30
+
+feedback:
+  suppress_days: 30
+
+model:
+  n_estimators: 300
+  learning_rate: 0.05
+  num_leaves: 15
+  min_child_samples: 30
+  subsample: 0.8
+  colsample_bytree: 0.8
+  logreg_max_iter: 500
+
+snapshots:
+  step_days: 7
+  detection_delay_days: 2
+  time_forward_days: 25
+  train_fraction: 0.70
+  validation_fraction: 0.15
+
+split:
+  high_band_target_fraction: 0.015
