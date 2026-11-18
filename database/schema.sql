@@ -77,6 +77,36 @@ CREATE TABLE IF NOT EXISTS detected_chains (
     created_at TEXT NOT NULL
 );
 
+CREATE TABLE IF NOT EXISTS cases (
+    case_id TEXT PRIMARY KEY,
+    title TEXT NOT NULL,
+    priority TEXT DEFAULT 'HIGH',
+    status TEXT DEFAULT 'OPEN',
+    assigned_to TEXT DEFAULT 'Lead AML Investigator',
+    created_at TEXT NOT NULL,
+    updated_at TEXT NOT NULL,
+    summary TEXT
+);
+
+CREATE TABLE IF NOT EXISTS case_entities (
+    link_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    case_id TEXT NOT NULL,
+    entity_type TEXT NOT NULL, -- 'ACCOUNT', 'TRANSACTION', 'ALERT', 'CHAIN'
+    entity_id TEXT NOT NULL,
+    notes TEXT,
+    linked_at TEXT NOT NULL,
+    FOREIGN KEY (case_id) REFERENCES cases(case_id)
+);
+
+CREATE TABLE IF NOT EXISTS case_notes (
+    note_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    case_id TEXT NOT NULL,
+    author TEXT NOT NULL,
+    note_text TEXT NOT NULL,
+    created_at TEXT NOT NULL,
+    FOREIGN KEY (case_id) REFERENCES cases(case_id)
+);
+
 CREATE INDEX IF NOT EXISTS idx_tx_sender ON transactions(sender_id);
 CREATE INDEX IF NOT EXISTS idx_tx_receiver ON transactions(receiver_id);
 CREATE INDEX IF NOT EXISTS idx_tx_timestamp ON transactions(timestamp);

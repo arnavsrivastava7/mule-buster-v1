@@ -266,9 +266,7 @@ def _get_service() -> FraudInvestigationService:
     """Retrieve or initialize the singleton FraudInvestigationService."""
     if "fraud_service" not in st.session_state:
         srv = FraudInvestigationService()
-        ov = srv.get_fraud_overview()
-        if ov["total_monitored_accounts"] == 0:
-            srv.sync_database_from_pipeline()
+        srv.sync_database_from_pipeline()
         st.session_state["fraud_service"] = srv
     return st.session_state["fraud_service"]
 
